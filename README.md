@@ -29,11 +29,11 @@ Run the executable file in _bin/Wall_E_CoppeliaSim.exe_ (Right-click -> Open). T
 Sample images of the run:
 
 <p align="center">
-  <img src="./docs/sim_img_1.png" width="256"/>
-  <img src="./docs/sim_img_2.png" width="256"/>
-  <img src="./docs/sim_img_3.png" width="256"/>
-  <img src="./docs/sim_img_4.png" width="256"/>
-  <img src="./docs/sim_img_5.png" width="256"/>
+  <img src="./docs/sim_img_1.JPG" width="256"/>
+  <img src="./docs/sim_img_2.JPG" width="256"/>
+  <img src="./docs/sim_img_3.JPG" width="256"/>
+  <img src="./docs/sim_img_4.JPG" width="256"/>
+  <img src="./docs/sim_img_5.JPG" width="256"/>
 </p>
 
 
