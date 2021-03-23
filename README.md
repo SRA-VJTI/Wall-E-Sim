@@ -11,7 +11,7 @@ This is an simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2
 # Installation
 
 * Download CoppeliaSim Edu 4.0.0 for Windows 64-bit OS from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Setup.exe) (file size - 161MB).
-* Download [Visual Studio Code] (https://code.visualstudio.com/download), if you haven't already
+* Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already
 
 
 * Clone this git repository :
