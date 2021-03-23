@@ -1,7 +1,7 @@
 # Wall-E-Sim
 A line follower simulation created in CoppeliaSim, with a C++ interface for CoppeliaSim's Remote API
 
-This is an simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.2-beta/tree/dev)
+This is a simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.2-beta/tree/dev)
 
 <p align="center">
   <img src="./docs/wall_E_bot.JPG" width="500"/>
