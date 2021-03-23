@@ -22,7 +22,7 @@ git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 # Run the code
 Open _scenes/WallE_line_follow.ttt_ in V-REP. You should see the Wall-E line-follower path, three vision sensor floating views, and a white floor with a black line. 
 <p align="center">
-  <img src="./docs/sim_img_1.JPG" height ="256"/>
+  <img src="./docs/sim_img_1.JPG" height ="520"/>
 </p>
 
 
