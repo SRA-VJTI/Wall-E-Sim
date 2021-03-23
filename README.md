@@ -26,7 +26,7 @@ Open _scenes/WallE_line_follow.ttt_ in V-REP. You should see the Wall-E line-fol
 </p>
 Run the executable file in _bin/Wall_E_CoppeliaSim.exe_ (Right-click -> Open). This will run the main script _src/line_follow.cpp_
 <p align="center">
-  <img src="./docs/sim_img_2.JPG" width="256" height ="256"/>
+  <img src="./docs/sim_img_2.JPG" height ="256"/>
 </p>
 
 Sample images of the run:
