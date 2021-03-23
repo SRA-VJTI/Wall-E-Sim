@@ -26,7 +26,7 @@ Run the executable file in _bin/Wall_E_CoppeliaSim.exe_ (Right-click -> Open). T
 
 
 
-Sample images of the pre-grasp:
+Sample images of the run:
 
 <p align="center">
   <img src="./docs/sim_img_1.png" width="256"/>
