@@ -11,10 +11,17 @@
 
 Run the following commands on cmd
 (path = path to cloned repo, for eg. C:\Users\name\Desktop\Wall_E_CoppeliaSim)
-
+* Open cmd
 ```
   cd path\Task_2
   cmake -G "MinGW Makefiles" -Bpath\Task_2\bin
   cd bin
   mingw32-make
 ```
+
+* Open the scene in VREP
+* In the same cmd, run
+```
+  Wall_E_CoppeliaSim.exe
+```
+
