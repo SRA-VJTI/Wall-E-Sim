@@ -19,7 +19,7 @@ Run the following commands on cmd
   mingw32-make
 ```
 
-* Open the scene in VREP
+* Open the scene in CoppeliaSim
 * In the same cmd, run
 ```
   Wall_E_CoppeliaSim.exe
