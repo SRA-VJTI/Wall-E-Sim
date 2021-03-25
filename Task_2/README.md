@@ -14,7 +14,7 @@ Run the following commands on cmd
 * Open cmd
 ```
   cd path\Task_2
-  cmake -G "MinGW Makefiles" -Bpath\Task_2\bin
+  cmake -G "MinGW Makefiles" -B bin
   cd bin
   mingw32-make
 ```
