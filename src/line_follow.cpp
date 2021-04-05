@@ -51,13 +51,13 @@ int main()
     float lineK[3] = { 15 ,1 , 0.01};
     //
     float test[5] = {10, 10, 10, 10, 0 };
-    float base_vel = -60 *( PI / 180);
+    float base_vel = 60 *( PI / 180);
     int* sensorHandle;
     sensorHandle = (int*)malloc(n * sizeof(int));
     float* sensorValue;
     sensorValue = (float*)malloc(n * sizeof(float));
     // Weights assigned to sensors
-    int sensorWeight[3] = {-1, 0, 1 };
+    int sensorWeight[3] = {1, 0, -1 };
     //
     float* target_vel;
     target_vel = (float*)malloc(2 * sizeof(float));
@@ -287,8 +287,8 @@ int main()
             * Same goes for left
             */
             if (error > 0.05) {
-                target_vel[0] = base_vel - pos * (((lineK[0] * error)+ (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //greater angle 
-                target_vel[1] = base_vel + pos * (((lineK[0] * error) + (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //smaller angle
+                target_vel[0] = base_vel + pos * (((lineK[0] * error)+ (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //greater angle 
+                target_vel[1] = base_vel - pos * (((lineK[0] * error) + (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //smaller angle
             }
             else {
                 target_vel[0] = base_vel;
