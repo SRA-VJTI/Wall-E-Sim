@@ -1,4 +1,12 @@
+#ifdef WIN32
 #include <Windows.h> //For sleep() functionality, this needs to be 1st include
+#endif
+#ifdef __APPLE__ 
+#include <unistd.h>
+#endif
+#ifdef __linux
+#include <unistd.h>
+#endif
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,6 +20,19 @@ extern "C" {
 }
 
 using namespace std;
+
+
+
+
+void mySleep(int sleepMs){
+#ifdef __linux
+    usleep(sleepMs * 1000);
+#endif
+#ifdef WIN32
+    Sleep(sleepMs);
+#endif
+}
+
 
 
 void readSensor(int clientID, simxInt sensorHandle[], int n, simxFloat sensorValue[]) {
@@ -46,18 +67,18 @@ int main()
     // --------------------------------- Variables ------------------------------------------------- //
     bool VERBOSE = true, isinitial = true;
     int flag = 0, clientID = 0, leftmotorHandle = 0, rightmotorHandle = 0, n = 3, stringcounter = 0;
-    float pos = 0, error = 0, prev_error = 0, derror = 0, ierror = 0, stopcode = 0;
+    float pos = 0, error = 0, prev_error = 0, derror = 0, ierror = 0,  stopcode = 0;
     //Tuned PID values
     float lineK[3] = { 15 ,1 , 0.01};
     //
     float test[5] = {10, 10, 10, 10, 0 };
-    float base_vel = -60 *( PI / 180);
+    float base_vel = 60 *( PI / 180);
     int* sensorHandle;
     sensorHandle = (int*)malloc(n * sizeof(int));
     float* sensorValue;
     sensorValue = (float*)malloc(n * sizeof(float));
     // Weights assigned to sensors
-    int sensorWeight[3] = {-1, 0, 1 };
+    int sensorWeight[3] = {1, 0, -1 };
     //
     float* target_vel;
     target_vel = (float*)malloc(2 * sizeof(float));
@@ -76,7 +97,7 @@ int main()
     // Starting main connection to Coppeliasim server as a client on port 19997, storing connection ID in variable clientID
     clientID = simxStart((simxChar*)"127.0.0.1", 19997, true, true, 5000, 5);
 
-    Sleep(1000);
+    mySleep(1000);
 
     if (clientID != -1)
     {
@@ -86,8 +107,9 @@ int main()
         // Starting the Coppeliasim simulation
         int start = simxStartSimulation(clientID, simx_opmode_blocking);
         if (start == simx_return_ok){
-            cout << "Simulation Started in CoppeliaSim" << endl;
+            cout << "Simulation started correctly in CoppeliaSim!" << endl;
         }
+
 
         /* An object handle is an integer ID associated with an object in the scene
          * These IDs are automatically assigned by Coppeliasim
@@ -249,7 +271,7 @@ int main()
 
             /* This part of the code determines which vision sensor 
             * detects the 'darkest' image (the more amount/area of line a sensor detects, the darker its image will be)
-            * and accordingly, error is assigned
+            * i.e darker image -> greater value.(a value of 0.2 is darker than a value of 0.05) And accordingly, error is assigned
             */
             if (sensorValue[0]>sensorValue[2]) {
                 flag = 0; //left
@@ -274,7 +296,7 @@ int main()
             error = (BLACK_MARGIN - sensorValue[1]);
 
             // signalerror sends the calculated error in a float signal to the server side
-            signalerror = sensorValue[1];
+            signalerror = pos * sensorValue[1];
             returncode = simxSetFloatSignal(clientID, floatName, signalerror, simx_opmode_streaming);
 
             // For the first run of this loop, the error for Kd and Ki remains zero
@@ -289,8 +311,8 @@ int main()
             * Same goes for left
             */
             if (error > 0.05) {
-                target_vel[0] = base_vel - pos * (((lineK[0] * error)+ (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //greater angle 
-                target_vel[1] = base_vel + pos * (((lineK[0] * error) + (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //smaller angle
+                target_vel[0] =  base_vel + pos * (((lineK[0] * error)+ (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //greater angle 
+                target_vel[1] =  base_vel - pos * (((lineK[0] * error) + (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //smaller angle
             }
             else {
                 target_vel[0] = base_vel;
@@ -315,6 +337,7 @@ int main()
         cout << " Connection status to VREP: FAILED" << endl;
     }
 
+    cout << "Great Work ! Stopping simulation now " << endl;
     simxStopSimulation(clientID, simx_opmode_oneshot);
     simxGetPingTime(clientID, &pingTime);
     simxFinish(clientID);
