@@ -14,23 +14,33 @@ Ensure that your Wall-E bot goes from the start to the end of the given maze.
 <p align="center">
   <img src="./docs/line_online.JPG" height ="256"/>
 </p>
+
 * Bot is to the Left of the Line - LEFT condition
+
 <p align="center">
   <img src="./docs/line_left.JPG" height ="256"/>
 </p>
+
 * Bot is to the Right of the Line - RIGHT condition
+
 <p align="center">
   <img src="./docs/line_right.JPG" height ="256"/>
 </p>
+
 * Bot is on a Node (All 3 sensors detect the black line) - NODE condition
+
 <p align="center">
   <img src="./docs/line_node.JPG" height ="256"/>
 </p>
+
 * Bot is completely off the line - REVERSE condition
+
 <p align="center">
   <img src="./docs/line_reverse.JPG" height ="256"/>
 </p>
+
 * Bot is at the end of path - END condition
+
 <p align="center">
   <img src="./docs/line_end.JPG" height ="256"/>
 </p>
@@ -39,13 +49,19 @@ Ensure that your Wall-E bot goes from the start to the end of the given maze.
 # Task
 Your Task is to make your bot follow your decided path from the START to the END
 * Step 1 : Analyse the maze
+
 <p align="center">
   <img src="./docs/maze_task3.JPG" height ="256"/>
 </p>
+
 * Step 2 : Decide which path you want your bot to travel from the START to the END of the maze
+
 * Step 3 : Manually detect all the LEFT/RIGHT/NODE/REVERSE conditions your bot will face on your decided path
+
 * Step 4 : Decide what turns you want to take at each of the above conditions
+
 *  Note  : The turns for REVERSE and END conditions have already been configured for you, you need to decide what turns your bot has to take for the LEFT, RIGHT and NODE conditions
+
 * Step 5 : Once you have the turns decided, start coding in the alloted space (line 123 onwards in 'line_follow.cpp'
 
 
