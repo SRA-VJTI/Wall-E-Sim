@@ -116,6 +116,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 ```
 <p align="center">
   <img src="./docs/anaconda_start.JPG" height ="256"/>
+  <img src="./docs/anaconda_activate.JPG" height ="256"/>
 </p>
 
 * Navigate to the cloned directory in the Conda Terminal
