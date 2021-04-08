@@ -105,12 +105,11 @@ Your Task is to make your bot follow your decided path from the START to the END
 </p>
 
 * Step 2 : Copy the file 'line_follow.cpp' from the location _Wall-E-Sim/Task_3/line_follow.cpp_ and paste it in your local _Wall-E-Sim/_ folder as follows
-<p align="left">
+<p align="center">
   <img src="./docs/copy_linefollow.JPG" height ="256"/>
-</p>
-<p align="right">
   <img src="./docs/paste_linefollow.JPG" height ="256"/>
 </p>
+
 * Step 3 : Search for anaconda prompt in your Start Menu, and activate the environment you made during installation using the command :
 ```
    conda activate Wall_E_Team_999
