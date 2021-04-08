@@ -51,7 +51,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 * Step 1 : Analyse the maze
 
 <p align="center">
-  <img src="./docs/maze_task3.JPG" height ="256"/>
+  <img src="./docs/maze_task3.JPG" height ="500"/>
 </p>
 
 * Step 2 : Decide which path you want your bot to travel from the START to the END of the maze
