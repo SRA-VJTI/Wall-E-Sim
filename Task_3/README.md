@@ -59,20 +59,20 @@ Your Task is to make your bot follow your decided path from the START to the END
         ```
     - Replace the last argument (LEFT) with the turn you want to take (variables to be passed as turns are given below)
 * Turn Variables : 
-*   1. LEFT : Variable for left turn
-*   2. RIGHT : Variable for right turn
-*   3. REVERSE : Variable for reversing
-*   4. STOP : Variable for stopping
-*   5. All_BLACK : Variable for NODE condition (turns Right by Default)
+1. LEFT : Variable for left turn
+2. RIGHT : Variable for right turn
+3. REVERSE : Variable for reversing
+4. STOP : Variable for stopping
+5. All_BLACK : Variable for NODE condition (turns Right by Default)
 *   Helper Variables :
-*   1. sensorValue[0] : Output from the Left sensor
-*   2. sensorValue[1] : Output from the Middle sensor
-*   3. sensorValue[2] : Output from the Right sensor
-*   4. all_black_flag : Has a value of 1 when all three sensors detect a black line
-*   5. all_black_counter : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
+1. sensorValue[0] : Output from the Left sensor
+2. sensorValue[1] : Output from the Middle sensor
+3. sensorValue[2] : Output from the Right sensor
+4. all_black_flag : Has a value of 1 when all three sensors detect a black line
+5. all_black_counter : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
 *     (Note : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
-*   6. TURN_MARGIN : (integer) MINIMUM Output of a sensor when it detects a black line at turns
-*   7. WHITE_MARGIN : (integer) MAXIMUM Output of a sensor when it does not detect a line
+6. TURN_MARGIN : (integer) MINIMUM Output of a sensor when it detects a black line at turns
+7. WHITE_MARGIN : (integer) MAXIMUM Output of a sensor when it does not detect a line
    
 
 # Code Algorithm
@@ -117,7 +117,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 
 * For Windows :
-* 1. 
+1. 
 ```
    cd C:/Users/Username/Desktop/Wall-E-Sim
    cmake -G "MinGW Makefiles" -B bin
@@ -133,7 +133,7 @@ Do verify that your system is getting identified correctly
   <img src="./docs/system_cmake_windows.JPG" height ="256"/>
 </p>
 
-* 2. If the output shows no errors, run the following commands in your Conda Terminal
+2. If the output shows no errors, run the following commands in your Conda Terminal
 ```
    cd bin
    mingw32-make
@@ -144,7 +144,7 @@ Your output should look like this :
   <img src="./docs/make_windows.JPG" height ="256"/>
 </p>
 
-* 3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
+3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
  ```
    Wall_E_CoppeliaSim.exe
 ```
@@ -161,7 +161,7 @@ Your scene output should look like this
 </p>
 
 * For Linux :
-* 1. 
+1. 
 ```
    cd <path_to_cloned_directory>
    cmake -G "Unix Makefiles" -B bin
@@ -178,7 +178,7 @@ Do verify that your system is getting identified correctly
   <img src="./docs/system_cmake_linux.JPG" height ="256"/>
 </p>
 
-* 2. If the output shows no errors, run the following commands in your Conda Terminal
+2. If the output shows no errors, run the following commands in your Conda Terminal
 ```
    cd bin
    make
@@ -189,7 +189,7 @@ Your output should look like this :
   <img src="./docs/make_linux.JPG" height ="256"/>
 </p>
 
-* 3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
+3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
  ```
    ./Wall_E_CoppeliaSim
 ```
