@@ -15,13 +15,13 @@ Ensure that your Wall-E bot goes from the start to the end of the given maze.
   <img src="./docs/line_online.JPG" height ="256"/>
 </p>
 
-* Bot is to the Left of the Line - LEFT condition
+* Bot is at a Left Turn - LEFT condition
 
 <p align="center">
   <img src="./docs/line_left.JPG" height ="256"/>
 </p>
 
-* Bot is to the Right of the Line - RIGHT condition
+* Bot is at a Right Turn - RIGHT condition
 
 <p align="center">
   <img src="./docs/line_right.JPG" height ="256"/>
