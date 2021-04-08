@@ -45,12 +45,12 @@ So when you run the simulation you will get a PID Tuning Window where you change
 
 * When you put only **K<sub>p</sub>** term :
 
-![P](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/P_Value.mp4)
+![P](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/P_Value.gif)
 
 * When you put only **K<sub>i</sub>** term :
 
-![I](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/I_Value.mp4)
+![I](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/I_Value.gif)
 
 * When you put only **K<sub>d</sub>** term :
 
-![D](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Filesk/D_Value.mp4)
+![D](https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/D_Value.gif)
