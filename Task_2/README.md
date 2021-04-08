@@ -41,20 +41,17 @@ where
 
 So when you run the simulation you will get a PID Tuning Window where you change the values of **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>** and try seeing the motion of the bot
 
-<p align="center">
-  <img src="https://github.com/MOLOCH-dev/Wall-E-Sim/tree/dev/Task_2/Files/Slider.png" width="500"/>
-</p>
 
-![PID Tuning](/Files/Slider.png)
+![PID Tuning](/Task_2/Files/Slider.png)
 
 * When you put only **K<sub>p</sub>** term :
 
-![P](/Files/P_Value.gif)
+![P](/Task_2/Files/P_Value.gif)
 
 * When you put only **K<sub>i</sub>** term :
 
-![I](/Files/I_Value.gif)
+![I](/Task_2/Files/I_Value.gif)
 
 * When you put only **K<sub>d</sub>** term :
 
-![D](/Files/D_Value.gif)
+![D](/Task_2/Files/D_Value.gif)
