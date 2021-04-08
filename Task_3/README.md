@@ -3,7 +3,7 @@ The scene contains a Black Line on a White Surface
 Ensure that your Wall-E bot goes from the start to the end of the given maze.
 
 <p align="center">
-  <img src="./docs/scene_task3.JPG" width="500"/>
+  <img src="./docs/scene_task3.JPG" width="800"/>
 </p>
 
 
