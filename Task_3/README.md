@@ -186,15 +186,10 @@ Your scene output should look like this
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_linux.JPG" height ="256"/>
+  <img src="./docs/cmake_linux.JPG" height ="500"/>
 </p>
 
-Do verify that your system is getting identified correctly
-<p align="center">
-  <img src="./docs/system_cmake_linux.JPG" height ="256"/>
-</p>
-
-2. If the output shows no errors, run the following commands in your Terminal
+2. If the output shows no errors, run the following command in your Terminal
 ```
    make
 ```
@@ -218,5 +213,5 @@ Terminal Output :
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/exec_scene.JPG" height ="256"/>
+  <img src="./docs/exec_scene.gif" height ="500"/>
 </p>
