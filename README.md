@@ -13,11 +13,26 @@ This is a simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.
 * Download CoppeliaSim Edu 4.0.0 for Windows 64-bit OS from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Setup.exe) (file size - 161MB).
 * Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already
 
+## For Windows ----->
 
-* Clone this git repository :
+* Go to Desktop :
+```
+cd Desktop
+```
+
+* Make a new folder and git init  :
+```
+mkdir Wall-E-CoppeliaSim
+cd Wall-E-CoppeliaSim
+git init
+```
+
+* Clone this git repository while in the same folder :
 ```
 git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
+**Refer this video (if required)**<br>
+![Windows](/docs/Windows_Part.gif)
 
 # Run the code
 Open _scenes/WallE_line_follow.ttt_ in V-REP. You should see the Wall-E line-follower path, three vision sensor floating views, and a white floor with a black line. 
