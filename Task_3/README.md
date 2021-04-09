@@ -180,8 +180,8 @@ Your scene output should look like this
 1. 
 ```
    cd <path_to_cloned_directory>
-   cmake -G "Unix Makefiles" -B bin
-   
+   cd Task_3/bin
+   cmake ..
 ```
 
 Your output will look like this : 
@@ -194,9 +194,8 @@ Do verify that your system is getting identified correctly
   <img src="./docs/system_cmake_linux.JPG" height ="256"/>
 </p>
 
-2. If the output shows no errors, run the following commands in your Conda Terminal
+2. If the output shows no errors, run the following commands in your Terminal
 ```
-   cd bin
    make
 ```
 
@@ -205,7 +204,7 @@ Your output should look like this :
   <img src="./docs/make_linux.JPG" height ="256"/>
 </p>
 
-3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
+3 . Now Run the generated executable by typing the following command in your Terminal and pressing enter
  ```
    ./Wall_E_CoppeliaSim
 ```
