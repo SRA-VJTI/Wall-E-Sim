@@ -75,20 +75,20 @@ Your Task is to make your bot follow your decided path from the START to the END
         ```
     - Replace the last argument (LEFT) with the turn you want to take (variables to be passed as turns are given below)
 * Turn Variables : 
-1. LEFT : Variable for left turn
-2. RIGHT : Variable for right turn
-3. REVERSE : Variable for reversing
-4. STOP : Variable for stopping
-5. All_BLACK : Variable for NODE condition (turns Right by Default)
+1. **LEFT** : Variable for left turn
+2. **RIGHT** : Variable for right turn
+3. **REVERSE** : Variable for reversing
+4. **STOP** : Variable for stopping
+5. **All_BLACK** : Variable for NODE condition (turns Right by Default)
 *   Helper Variables :
-1. sensorValue[0] : Output from the Left sensor
-2. sensorValue[1] : Output from the Middle sensor
-3. sensorValue[2] : Output from the Right sensor
-4. all_black_flag : Has a value of 1 when all three sensors detect a black line
-5. all_black_counter : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
-*     (Note : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
-6. TURN_MARGIN : (integer) MINIMUM Output of a sensor when it detects a black line at turns
-7. WHITE_MARGIN : (integer) MAXIMUM Output of a sensor when it does not detect a line
+1. **sensorValue[0]** : Output from the Left sensor
+2. **sensorValue[1]** : Output from the Middle sensor
+3. **sensorValue[2]** : Output from the Right sensor
+4. **all_black_flag** : Has a value of 1 when all three sensors detect a black line
+5. **all_black_counter** : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
+*     (**Note** : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
+6. **TURN_MARGIN** : (integer) MINIMUM Output of a sensor when it detects a black line at turns
+7. **WHITE_MARGIN** : (integer) MAXIMUM Output of a sensor when it does not detect a line
    
 
 # Code Algorithm
@@ -177,7 +177,7 @@ Your scene output should look like this
 </p>
 
 * For Linux :
-1. 
+1. Navigate to the Directory where you cloned the repository and execute the following commands:
 ```
    cd <path_to_cloned_directory>
    cd Task_3/bin
