@@ -1,0 +1,7 @@
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/install/strip.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/edit_cache.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/Wall_E_CoppeliaSim.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/rebuild_cache.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/list_install_components.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/install/local.dir
+/home/saad/Wall-E-CoppeliaSim/Task_3/bin/CMakeFiles/install.dir
