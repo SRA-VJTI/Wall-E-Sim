@@ -7,7 +7,52 @@
 ```
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
-# Task 2
+# Task 1
+
+Task 1 is to tune the bot i.e. to check for the motion of the bot by changing the values of **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>**
+
+## **Proportional-Integral-Derivative (PID) :** 
+
+PID is the mechanism through which we can control the motion of line following bot which is dependent on few terms given below in the equation
+
+![equation](https://i0.wp.com/media.visaya.solutions/2017/10/300px-PIDController_Equation.png?resize=344%2C141)
+
+where 
+  1)  **K<sub>p</sub>e(t)** is the P term which basically says that (in terms of the line) your error increases as you go away from the line.
+  2) **K<sub>i</sub>∫e(t)dt** is the I term which just accumulates the error overtime by summing it continuously.
+  3) **K<sub>d</sub> de(t)/dt** is the D term and is just to damp(decrease the error) and bring back to the line , so while damping it will oscillate
+
+  Here in the equation, **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>** are constants
+
+## In Simulation ---->
+
+So when you run the simulation you will get a PID Tuning Window where you can change the values of **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>** here
+
+<p align="center">
+  <img src="/Task_1/Files/Slider.png" height ="450"/>
+</p>
+
+
+* When you put only **K<sub>p</sub>** term :
+
+<p align="center">
+  <img src="/Task_1/Files/P_Value.gif" height ="450"/>
+</p>
+
+
+* When you put only **K<sub>i</sub>** term :
+
+<p align="center">
+  <img src="/Task_1/Files/I_Value.gif" height ="450"/>
+</p>
+
+
+* When you put only **K<sub>d</sub>** term :
+
+<p align="center">
+  <img src="/Task_1/Files/D_Value.gif" height ="450"/>
+</p>
+
 
 
 # Run the code
@@ -28,7 +73,7 @@ Run the following commands on miniconda terminal
 Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
-  <img src="/Task_2/Files/Task2_Win_cop.gif" height ="450"/>
+  <img src="/Task_1/Files/Task2_Win_cop.gif" height ="450"/>
 </p>
 
 * In the same terminal, run
@@ -51,7 +96,7 @@ and window will open up where you have to navigate like this
 *home/username/Wall-E-Coppeliasim/Wall-E-Sim/scenes* <br>
 * Now Open WallE_line_follow.tt
 <p align="center">
-  <img src="/Task_2/Files/Task2_Ubuntu_cop.gif" height ="450"/>
+  <img src="/Task_1/Files/Task2_Ubuntu_cop.gif" height ="450"/>
 </p>
 
 
@@ -76,5 +121,5 @@ and window will open up where you have to navigate like this
 Your scene output should look like this
 
 <p align="center">
-  <img src="/Task_2/Files/Task2_Ubuntu.gif" height ="500"/>
+  <img src="/Task_1/Files/Task2_Ubuntu.gif" height ="500"/>
 </p>

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/extApi.h
+extApiPlatform.h
+../../include/extApiPlatform.h
+simConst.h
+../../include/simConst.h
+
+../../include/extApiPlatform.h
+stdint.h
+-
+
+../../include/simConst.h
+
+/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/line_follow.cpp
+Windows.h
+-
+unistd.h
+-
+unistd.h
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+string
+-
+extApi.h
+/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/extApi.h
+
