@@ -115,8 +115,7 @@ Your Task is to make your bot follow your decided path from the START to the END
    conda activate Wall_E_Team_999
 ```
 <p align="center">
-  <img src="./docs/anaconda_start.JPG" height ="256"/>
-  <img src="./docs/anaconda_activate.JPG" height ="256"/>
+  <img src="./docs/anaconda_activate.JPG"/>
 </p>
 
 * Navigate to the cloned directory in the Conda Terminal
@@ -173,7 +172,7 @@ Terminal Output :
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/scene_exec.gif" height ="256"/>
+  <img src="./docs/scene_exec.gif" height ="500"/>
 </p>
 
 * For Linux :
