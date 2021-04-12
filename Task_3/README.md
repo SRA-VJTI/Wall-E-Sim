@@ -141,7 +141,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_windows" height ="256"/>
+  <img src="./docs/cmake_windows.JPG" height ="256"/>
 </p>
 
 Do verify that your system is getting identified correctly
@@ -173,7 +173,7 @@ Terminal Output :
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/scene_exec.JPG" height ="256"/>
+  <img src="./docs/scene_exec.gif" height ="256"/>
 </p>
 
 * For Linux :
