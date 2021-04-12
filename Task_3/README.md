@@ -135,7 +135,8 @@ Your Task is to make your bot follow your decided path from the START to the END
 1. 
 ```
    cd C:/Users/Username/Desktop/Wall-E-Sim
-   cmake -G "MinGW Makefiles" -B bin
+   cd bin
+   cmake -G "MinGW Makefiles" ..
 ```
 
 Your output will look like this : 
