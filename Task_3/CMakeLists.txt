@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Wall_E_CoppeliaSim)
+project(Wall_E_CoppeliaSim_task3)
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
@@ -20,29 +20,30 @@ add_definitions(-DDO_NOT_USE_SHARED_MEMORY)
 add_definitions(-D${remoteApiDef})
 
 
+
 set(SOURCES
-    remote_api/extApi.c
-    remote_api/extApiPlatform.c
+    ../remote_api/extApi.c
+    ../remote_api/extApiPlatform.c
 )
 
 set(HEADERS
-include/extApi.h
-include/extApiInternal.h
-include/shared_memory.h
-include/simConst.h
-include/simLib.h
-include/simTypes.h
-include/extApiPlatform.h
+../include/extApi.h
+../include/extApiInternal.h
+../include/shared_memory.h
+../include/simConst.h
+../include/simLib.h
+../include/simTypes.h
+../include/extApiPlatform.h
 )
 
-include_directories("include/")
-include_directories("remote_api/")
-include_directories("src/")
+include_directories("../include/")
+include_directories("../remote_api/")
+include_directories("Task_3/")
 
 find_package(Threads)
 
 add_executable(${PROJECT_NAME}
-                line_follow.cpp
+                task_3.cpp
                 ${SOURCES}
                 ${HEADERS})
 
@@ -61,7 +62,9 @@ function(print)
     message("----------------------------------")
     message("Defining ${remoteApiDef}")
     message("To build this project")
-    message("type mingw32-make in the terminal")
+    message("Type the following commands in the terminal")
+    message("cd bin")
+    message("mingw32-make")
     message("Then Run the executable generated")
     if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
         message("By running ${PROJECT_NAME}.exe on the terminal")
