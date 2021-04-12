@@ -302,11 +302,13 @@ int main()
             returncode = simxSetFloatSignal(clientID, floatName, signalerror, simx_opmode_streaming);
 
             // For the first run of this loop, the error for Kd and Ki remains zero
+            // EDIT THIS VARIABLE
             if (isinitial == false) {
-                derror = ;
-                ierror = ;
+                //derror = ;
+                //ierror = ;
             }
-            cumulative_error = ;
+
+            //cumulative_error = ;
             
             /* Setting a PID controlled velocity for the bot
             * If the bot is on the left of the line, the right wheel receives a greater velocity than the left
