@@ -177,10 +177,15 @@ Your scene output should look like this
 </p>
 
 * For Linux :
-1. 
+1. Copy line_follow.cpp from Wall_E_Cop/wall-e-sim/task_3 and paste it here Wall_E_Cop/wall-e-sim
+<p align="center">
+  <img src="./docs/move_linux.JPG" height ="256"/>
+</p>
+3. 
 ```
    cd <path_to_cloned_directory>
-   cmake -G "Unix Makefiles" -B bin
+   cd bin
+   cmake ..
    
 ```
 
@@ -196,7 +201,6 @@ Do verify that your system is getting identified correctly
 
 2. If the output shows no errors, run the following commands in your Conda Terminal
 ```
-   cd bin
    make
 ```
 
