@@ -5,7 +5,6 @@
 ```
   git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
-* Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
 # Run the code
 
