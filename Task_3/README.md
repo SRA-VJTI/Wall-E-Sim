@@ -151,7 +151,6 @@ Do verify that your system is getting identified correctly
 
 2. If the output shows no errors, run the following commands in your Conda Terminal
 ```
-   cd bin
    mingw32-make
 ```
 
