@@ -112,13 +112,7 @@ Your Task is to make your bot follow your decided path from the START to the END
   <img src="./docs/anaconda_activate.JPG"/>
 </p>
 
-* Navigate to the cloned directory in the Conda Terminal
-```
-   cd C:\Users\Username\Desktop\Wall-E-Sim
-```
-<p align="center">
-  <img src="./docs/navigate_clone.JPG"/>
-</p>
+
 
 
 * Run the following commands in your Conda Terminal
@@ -126,9 +120,17 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 
 * For Windows :
-1. 
+1. Navigate to the cloned directory in the Conda Terminal
 ```
-   cd C:/Users/Username/Desktop/Wall-E-Sim
+   cd C:\Users\Username\Desktop\Wall-E-Sim
+```
+<p align="center">
+  <img src="./docs/navigate_clone.JPG"/>
+</p>
+
+2. Run the following commands in the terminal
+```
+   
    cd bin
    cmake -G "MinGW Makefiles" ..
 ```
