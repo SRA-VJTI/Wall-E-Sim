@@ -303,6 +303,18 @@ int main()
 
             // For the first run of this loop, the error for Kd and Ki remains zero
             // EDIT THIS VARIABLE
+            /* 
+            Previous error is saved  in the variable 'prev_error'
+
+            --------------------------------------------------------------------------------------------
+
+            
+
+            ----------------------------------------------------------------------------------------------
+            */
+            //Previous error is saved  in the variable 'prev_error'
+            //Error is saved in the variable 'error'
+            //
             if (isinitial == false) {
                 //derror = ;
                 //ierror = ;
