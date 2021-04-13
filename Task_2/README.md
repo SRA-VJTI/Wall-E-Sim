@@ -33,14 +33,18 @@ Run the following commands on miniconda terminal
 <p align="center">
   <img src="./docs/navigate_clone_windows.JPG"/>
 </p>
-```
+* Buid the files
+
+```sh
 cd bin
 cmake -G "MinGW Makefiles" ..
 ```
 <p align="center">
   <img src="./docs/cmake_windows.JPG" height ="450"/>
 </p>
-```
+* Make the Files
+
+```sh
 mingw32-make
 ```
 <p align="center">
@@ -58,7 +62,7 @@ Then just open the WallE_line_follow.ttt file
   Wall_E_CoppeliaSim.exe
 ```
 <p align="center">
-  <img src="./docs/exec_terminal_windows.JPG" height ="450"/>
+  <img src="./docs/exec_terminal_windows.PNG"/>
 </p>
 
 <br>
