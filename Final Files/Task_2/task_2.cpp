@@ -72,7 +72,7 @@ int main()
     float lineK[3] = { 15 ,1 , 0.01};
     //
     float test[5] = {10, 10, 10, 10, 0 };
-    float base_vel = 60 *( PI / 180);
+    float base_vel = -60 *( PI / 180);
     int* sensorHandle;
     sensorHandle = (int*)malloc(n * sizeof(int));
     float* sensorValue;
@@ -82,6 +82,7 @@ int main()
     //
     float* target_vel;
     target_vel = (float*)malloc(2 * sizeof(float));
+    float cumulative_error;
     simxInt returncode, signalLength, pingTime;
     const simxChar* signalName = "PIDvalues";
     const simxChar floatName[] = "error";
@@ -241,6 +242,7 @@ int main()
             lineK[1] = (test[1] != -1) ? (test[1]) : (1);
             lineK[2] = (test[2] != -1) ? (test[2]) : (0.01);
             stopcode = test[4];
+            
 
             // -----------------------------------------------x------------------------------------------------------ //
 
@@ -300,10 +302,25 @@ int main()
             returncode = simxSetFloatSignal(clientID, floatName, signalerror, simx_opmode_streaming);
 
             // For the first run of this loop, the error for Kd and Ki remains zero
+            // EDIT THIS VARIABLE
+            /* 
+            Previous error is saved  in the variable 'prev_error'
+
+            --------------------------------------------------------------------------------------------
+
+            
+
+            ----------------------------------------------------------------------------------------------
+            */
+            //Previous error is saved  in the variable 'prev_error'
+            //Error is saved in the variable 'error'
+            //
             if (isinitial == false) {
-                derror = prev_error - error;
-                ierror += error;
+                //derror = ;
+                //ierror = ;
             }
+
+            //cumulative_error = ;
             
             /* Setting a PID controlled velocity for the bot
             * If the bot is on the left of the line, the right wheel receives a greater velocity than the left
@@ -311,8 +328,8 @@ int main()
             * Same goes for left
             */
             if (error > 0.05) {
-                target_vel[0] =  base_vel + pos * (((lineK[0] * error)+ (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //greater angle 
-                target_vel[1] =  base_vel - pos * (((lineK[0] * error) + (lineK[1] * derror) + (lineK[2] * ierror)) * float((PI / 180) * 10.0)); //smaller angle
+                target_vel[0] =  base_vel + pos * ((cumulative_error) * float((PI / 180) * 10.0)); //greater angle 
+                target_vel[1] =  base_vel - pos * ((cumulative_error) * float((PI / 180) * 10.0)); //smaller angle
             }
             else {
                 target_vel[0] = base_vel;
@@ -343,6 +360,10 @@ int main()
     simxFinish(clientID);
     return clientID;
 }
+
+
+
+
 
 
 
