@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
+<<<<<<< HEAD
 project(Wall_E_CoppeliaSim_task2)
+=======
+project(Wall_E_CoppeliaSim)
+>>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
@@ -20,6 +24,10 @@ add_definitions(-DDO_NOT_USE_SHARED_MEMORY)
 add_definitions(-D${remoteApiDef})
 
 
+<<<<<<< HEAD
+=======
+set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin/)
+>>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
 
 set(SOURCES
     ../remote_api/extApi.c
@@ -38,12 +46,20 @@ set(HEADERS
 
 include_directories("../include/")
 include_directories("../remote_api/")
+<<<<<<< HEAD
 include_directories("Task_2/")
+=======
+include_directories("../src/")
+>>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
 
 find_package(Threads)
 
 add_executable(${PROJECT_NAME}
+<<<<<<< HEAD
                 task_2.cpp
+=======
+                line_follow.cpp
+>>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
                 ${SOURCES}
                 ${HEADERS})
 
@@ -62,6 +78,7 @@ function(print)
     message("----------------------------------")
     message("Defining ${remoteApiDef}")
     message("To build this project")
+<<<<<<< HEAD
     message("Type the following commands in the terminal")
     message("cd bin")
     message("mingw32-make")
@@ -71,6 +88,12 @@ function(print)
     elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
          message("By running ./${PROJECT_NAME} on the terminal")
     endif()
+=======
+    message("cd to ${PROJECT_BINARY_DIR}")
+    message("type mingw32-make in the terminal")
+    message("Then Run the executable generated")
+    message("By running ${PROJECT_NAME}.exe on the terminal")
+>>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
     message("----------------------------------")
 endfunction()
 
