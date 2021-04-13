@@ -13,6 +13,13 @@ This is a simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.
 * Download CoppeliaSim Edu 4.0.0 for Windows 64-bit OS from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Setup.exe) (file size - 161MB).
 * Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already
 
+## Cloning For Windows ----->
+*You can do this in cmd*
+* Go to Desktop :
+```
+cd Desktop
+```
+
 * Make a new folder and git init  :
 ```
 mkdir Wall-E-CoppeliaSim
@@ -24,29 +31,30 @@ git init
 ```
 git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
-
-# Run the code
-Open _scenes/WallE_line_follow.ttt_ in V-REP. You should see the Wall-E line-follower path, three vision sensor floating views, and a white floor with a black line. 
+**Refer this video (if required)**<br>
 <p align="center">
-  <img src="./docs/sim_img_1.JPG" height ="520"/>
+  <img src="./docs/Windows_Part.gif" width="600"/>
 </p>
 
 
-Run the executable file in _bin/Wall_E_CoppeliaSim.exe_ (Right-click -> Open). This will run the main script _src/line_follow.cpp_
+## Cloning For Linux ----->
+
+* Make a new folder and git init  :
+```
+mkdir Wall-E-CoppeliaSim
+cd Wall-E-CoppeliaSim
+git init
+```
+
+* Clone this git repository while in the same folder :
+```
+git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+```
+**Refer this video (if required)**<br>
 <p align="center">
-  <img src="./docs/sim_img_2.JPG" height ="256"/>
+  <img src="./docs/Ubuntu_Part.gif" width="600"/>
 </p>
+<br>
 
-Sample images of the run:
-
-<p align="center">
-  
-  
-  <img src="./docs/sim_img_3.JPG" width="256"/>
-  <img src="./docs/sim_img_4.JPG" width="256"/>
-  <img src="./docs/sim_img_5.JPG" width="256"/>
-</p>
-
-
-# Todo :
+After Cloning you can now you can now see all the files and folders present in your device and now you can proceed with tasks by just going to the respective task folder and there you will find more instructions.
 
