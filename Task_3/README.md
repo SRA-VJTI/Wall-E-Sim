@@ -122,7 +122,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 * For Windows :
 1. Navigate to the cloned directory in the Conda Terminal
 ```
-   cd C:\Users\Username\Desktop\Wall-E-Sim
+   cd C:\Users\Username\Desktop\Wall-E-CoppeliaSim\Wall-E-Sim\Task_3
 ```
 <p align="center">
   <img src="./docs/navigate_clone.JPG"/>
