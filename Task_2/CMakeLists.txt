@@ -6,6 +6,9 @@ SET(CMAKE_CXX_FLAGS
 "${CMAKE_CXX_FLAGS} -Wall -std=c++0x -DBUILD_SHARED_LIBS=OFF")
 ENDIF(CMAKE_COMPILER_IS_GNUCC)
 
+set(CMAKE_CXX_STANDARD_LIBRARIES "-static-libgcc -static-libstdc++ -lwsock32 -lws2_32 ${CMAKE_CXX_STANDARD_LIBRARIES}")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
+
 if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     set(remoteApiDef WIN32)
 elseif (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
@@ -20,6 +23,7 @@ add_definitions(-DDO_NOT_USE_SHARED_MEMORY)
 add_definitions(-D${remoteApiDef})
 
 
+set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin/)
 
 set(SOURCES
     ../remote_api/extApi.c
@@ -38,7 +42,7 @@ set(HEADERS
 
 include_directories("../include/")
 include_directories("../remote_api/")
-include_directories("Task_2/")
+include_directories("../src/")
 
 find_package(Threads)
 
@@ -62,15 +66,10 @@ function(print)
     message("----------------------------------")
     message("Defining ${remoteApiDef}")
     message("To build this project")
-    message("Type the following commands in the terminal")
-    message("cd bin")
-    message("mingw32-make")
+    message("cd to ${PROJECT_BINARY_DIR}")
+    message("type mingw32-make in the terminal")
     message("Then Run the executable generated")
-    if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
-        message("By running ${PROJECT_NAME}.exe on the terminal")
-    elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
-         message("By running ./${PROJECT_NAME} on the terminal")
-    endif()
+    message("By running ${PROJECT_NAME}.exe on the terminal")
     message("----------------------------------")
 endfunction()
 
