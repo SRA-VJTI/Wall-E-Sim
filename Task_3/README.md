@@ -1,6 +1,7 @@
 # Wall-E-Sim : Task 3
 The scene contains a Black Line on a White Surface
 Ensure that your Wall-E bot goes from the start to the end of the given maze.
+Start coding from line 486
 
 <p align="center">
   <img src="./docs/scene_task3.JPG" width="800"/>
@@ -90,12 +91,6 @@ Your Task is to make your bot follow your decided path from the START to the END
 6. **TURN_MARGIN** : (integer) MINIMUM Output of a sensor when it detects a black line at turns
 7. **WHITE_MARGIN** : (integer) MAXIMUM Output of a sensor when it does not detect a line
    
-
-# Code Algorithm
-
-<p align="center">
-  <img src="./docs/code_algo.JPG" height ="500"/>
-</p>
 
 
 # Run the code
