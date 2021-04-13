@@ -42,6 +42,7 @@ cmake -G "MinGW Makefiles" ..
 <p align="center">
   <img src="./docs/cmake_windows.JPG" height ="450"/>
 </p>
+
 * Make the Files
 ```sh
 mingw32-make
