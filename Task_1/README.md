@@ -1,4 +1,4 @@
-# Installation
+# Installation (if not done already)
 
 
 * Clone this git repository :
@@ -29,28 +29,28 @@ where
 So when you run the simulation you will get a PID Tuning Window where you can change the values of **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>** here
 
 <p align="center">
-  <img src="/Task_1/Files/Slider.png" height ="450"/>
+  <img src="./docs/Slider.png" height ="450"/>
 </p>
 
 
 * When you put only **K<sub>p</sub>** term :
 
 <p align="center">
-  <img src="/Task_1/Files/P_Value.gif" height ="450"/>
+  <img src="./docs/P_Value.gif" height ="450"/>
 </p>
 
 
 * When you put only **K<sub>i</sub>** term :
 
 <p align="center">
-  <img src="/Task_1/Files/I_Value.gif" height ="450"/>
+  <img src="./docs/I_Value.gif" height ="450"/>
 </p>
 
 
 * When you put only **K<sub>d</sub>** term :
 
 <p align="center">
-  <img src="/Task_1/Files/D_Value.gif" height ="450"/>
+  <img src="./docs/D_Value.gif" height ="450"/>
 </p>
 
 
@@ -59,27 +59,21 @@ So when you run the simulation you will get a PID Tuning Window where you can ch
 
 ## For Windows ------>
 
-Run the following commands on miniconda terminal
-(path = path to cloned repo, for eg. C:\Users\name\Desktop\Wall_E_CoppeliaSim)
-* Open miniconda terminal
-```
-  cd path\Task_2
-  cmake -G "MinGW Makefiles" -B bin
-  cd bin
-  mingw32-make
-```
 
 * Open the scene in CoppeliaSim <br>
 Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
-  <img src="/Task_1/Files/Task2_Win_cop.gif" height ="450"/>
+  <img src="./docs/Task1_Win_cop.gif" height ="450"/>
 </p>
 
-* In the same terminal, run
-```
-  Wall_E_CoppeliaSim.exe
-```
+* Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→Task_1* and just double click on *Wall_E_CoppeliaSim_task1.exe*
+
+<p align="center">
+  <img src="./docs/cd.gif" height ="450"/>
+</p>
+
+* Then in Coppeliasim just change the values in sliders and complete the task
 
 <br>
 
@@ -94,32 +88,31 @@ Then just open the WallE_line_follow.ttt file
 * After the scene opens go to *File→Open Scene*
 and window will open up where you have to navigate like this
 *home/username/Wall-E-Coppeliasim/Wall-E-Sim/scenes* <br>
-* Now Open WallE_line_follow.tt
+* Now Open WallE_line_follow.ttt
 <p align="center">
-  <img src="/Task_1/Files/Task2_Ubuntu_cop.gif" height ="450"/>
+  <img src="./docs/Task1_Ubuntu_cop.gif" height ="450"/>
 </p>
 
 
 2. Open new terminal and Navigate to the Directory where you cloned the repository and execute the following commands:
 ```
    cd <path_to_cloned_directory>
-   cd Task_2/bin
-   cmake ..
+   cd Task_1
 ```
 
-3. If the output shows no errors, run the following command in your Terminal
+3. Next run this command to give permission
 ```
-   make
+   sudo chmod +x ./Wall_E_CoppeliaSim_task1
 ```
 
-4. Now Run the generated executable by typing the following command in your Terminal and pressing enter
+4. Now Run the given executable by typing the following command in your Terminal and pressing enter
  ```
-   ./Wall_E_CoppeliaSim
+   ./Wall_E_CoppeliaSim_task1
 ```
 **NOTE :** You can type ./W and press tab, the terminal will automatically detect the exe file
 
-Your scene output should look like this
+
 
 <p align="center">
-  <img src="/Task_1/Files/Task2_Ubuntu.gif" height ="500"/>
+  <img src="./docs/cd_Ubuntu.png" height ="300"/>
 </p>

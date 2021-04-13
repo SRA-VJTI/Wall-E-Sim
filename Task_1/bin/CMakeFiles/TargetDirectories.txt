@@ -1,7 +1,0 @@
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/install/strip.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/edit_cache.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/Wall_E_CoppeliaSim.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/rebuild_cache.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/list_install_components.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/install/local.dir
-/home/karthikswami/WE_VREP/Wall-E-Sim/Task_1/bin/CMakeFiles/install.dir

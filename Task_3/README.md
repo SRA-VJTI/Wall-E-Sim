@@ -172,29 +172,17 @@ Your scene output should look like this
 </p>
 
 * For Linux :
-<<<<<<< HEAD
-1. Copy line_follow.cpp from Wall_E_Cop/wall-e-sim/task_3 and paste it here Wall_E_Cop/wall-e-sim
-<p align="center">
-  <img src="./docs/move_linux.JPG" height ="256"/>
-</p>
-3. 
-```
-   cd <path_to_cloned_directory>
-   cd bin
-   cmake ..
-   
-=======
+
 1. Navigate to the Directory where you cloned the repository and execute the following commands:
 ```
    cd <path_to_cloned_directory>
    cd Task_3/bin
    cmake ..
->>>>>>> 12b4fb416d5e62568969782a39b2dbfcb08b30db
 ```
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_linux.JPG" height ="500"/>
+  <img src="./docs/cmake_linux.png" height ="400"/>
 </p>
 
 2. If the output shows no errors, run the following command in your Terminal
@@ -204,7 +192,7 @@ Your output will look like this :
 
 Your output should look like this :
 <p align="center">
-  <img src="./docs/make_linux.JPG" height ="256"/>
+  <img src="./docs/make_linux.png" height ="256"/>
 </p>
 
 3 . Now Run the generated executable by typing the following command in your Terminal and pressing enter
@@ -215,11 +203,11 @@ Note : You can type ./W and press tab, the terminal will automatically detect th
 
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_linux.JPG" height ="256"/>
+  <img src="./docs/exec_terminal_linux.png" height ="256"/>
 </p>
 
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/exec_scene.gif" height ="500"/>
+  <img src="./docs/exec_scene.gif" height ="450"/>
 </p>

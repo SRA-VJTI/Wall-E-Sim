@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -std=c++0x -DBUILD_SHARED_LIBS=OFF   CMakeFiles/Wall_E_CoppeliaSim.dir/line_follow.cpp.o CMakeFiles/Wall_E_CoppeliaSim.dir/home/karthikswami/WE_VREP/Wall-E-Sim/remote_api/extApi.c.o CMakeFiles/Wall_E_CoppeliaSim.dir/home/karthikswami/WE_VREP/Wall-E-Sim/remote_api/extApiPlatform.c.o  -o Wall_E_CoppeliaSim -lpthread 

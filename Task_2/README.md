@@ -1,13 +1,24 @@
-# Installation
+# Installation (if not done already)
 
 
 * Clone this git repository :
 ```
   git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
+* Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
 # Task 2
+Task 2 is basically to write the PID equation and update the error terms
 
+<p align="center">
+  <img src="./docs/code.png" height ="450"/>
+</p>
+
+1) First just uncomment "derror = ", "ierror = " and "cumulative_error = "
+2) Update the values for derror and ierror
+3) Write the equation in cumulative_error
+4) Then follow the **Run the code** steps
+ 
 
 # Run the code
 
@@ -27,7 +38,7 @@ Run the following commands on miniconda terminal
 Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
-  <img src="/Task_2/Files/Task2_Win_cop.gif" height ="450"/>
+  <img src="./docs/Task2_Win_cop.gif" height ="450"/>
 </p>
 
 * In the same terminal, run
@@ -50,7 +61,7 @@ and window will open up where you have to navigate like this
 *home/username/Wall-E-Coppeliasim/Wall-E-Sim/scenes* <br>
 * Now Open WallE_line_follow.tt
 <p align="center">
-  <img src="/Task_2/Files/Task2_Ubuntu_cop.gif" height ="450"/>
+  <img src="./docs/Task2_Ubuntu_cop.gif" height ="450"/>
 </p>
 
 
@@ -75,5 +86,5 @@ and window will open up where you have to navigate like this
 Your scene output should look like this
 
 <p align="center">
-  <img src="/Task_2/Files/Task2_Ubuntu.gif" height ="500"/>
+  <img src="./docs/Task2_Ubuntu.gif" height ="500"/>
 </p>

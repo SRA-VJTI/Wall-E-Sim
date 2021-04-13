@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(Wall_E_CoppeliaSim_task3)
+project(Wall_E_CoppeliaSim)
+
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
@@ -22,6 +23,7 @@ add_definitions(-D${remoteApiDef})
 
 set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin/)
 
+
 set(SOURCES
     ../remote_api/extApi.c
     ../remote_api/extApiPlatform.c
@@ -39,7 +41,8 @@ set(HEADERS
 
 include_directories("../include/")
 include_directories("../remote_api/")
-include_directories("Task_3/")
+include_directories("../src/")
+
 
 find_package(Threads)
 
@@ -63,6 +66,15 @@ function(print)
     message("----------------------------------")
     message("Defining ${remoteApiDef}")
     message("To build this project")
+    message("Type the following commands in the terminal")
+    message("cd bin")
+    message("mingw32-make")
+    message("Then Run the executable generated")
+    if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+        message("By running ${PROJECT_NAME}.exe on the terminal")
+    elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+         message("By running ./${PROJECT_NAME} on the terminal")
+    endif()
     message("cd to ${PROJECT_BINARY_DIR}")
     message("type mingw32-make in the terminal")
     message("Then Run the executable generated")
