@@ -75,20 +75,20 @@ Your Task is to make your bot follow your decided path from the START to the END
         ```
     - Replace the last argument (LEFT) with the turn you want to take (variables to be passed as turns are given below)
 * Turn Variables : 
-1. LEFT : Variable for left turn
-2. RIGHT : Variable for right turn
-3. REVERSE : Variable for reversing
-4. STOP : Variable for stopping
-5. All_BLACK : Variable for NODE condition (turns Right by Default)
+1. **LEFT** : Variable for left turn
+2. **RIGHT** : Variable for right turn
+3. **REVERSE** : Variable for reversing
+4. **STOP** : Variable for stopping
+5. **All_BLACK** : Variable for NODE condition (turns Right by Default)
 *   Helper Variables :
-1. sensorValue[0] : Output from the Left sensor
-2. sensorValue[1] : Output from the Middle sensor
-3. sensorValue[2] : Output from the Right sensor
-4. all_black_flag : Has a value of 1 when all three sensors detect a black line
-5. all_black_counter : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
-*     (Note : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
-6. TURN_MARGIN : (integer) MINIMUM Output of a sensor when it detects a black line at turns
-7. WHITE_MARGIN : (integer) MAXIMUM Output of a sensor when it does not detect a line
+1. **sensorValue[0]** : Output from the Left sensor
+2. **sensorValue[1]** : Output from the Middle sensor
+3. **sensorValue[2]** : Output from the Right sensor
+4. **all_black_flag** : Has a value of 1 when all three sensors detect a black line
+5. **all_black_counter** : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
+*     (**Note** : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
+6. **TURN_MARGIN** : (integer) MINIMUM Output of a sensor when it detects a black line at turns
+7. **WHITE_MARGIN** : (integer) MAXIMUM Output of a sensor when it does not detect a line
    
 
 # Code Algorithm
@@ -104,28 +104,15 @@ Your Task is to make your bot follow your decided path from the START to the END
   <img src="./docs/scene_task3.JPG" height ="520"/>
 </p>
 
-* Step 2 : Copy the file 'line_follow.cpp' from the location _Wall-E-Sim/Task_3/line_follow.cpp_ and paste it in your local _Wall-E-Sim/_ folder as follows
-<p align="center">
-  <img src="./docs/copy_linefollow.JPG" height ="256"/>
-  <img src="./docs/paste_linefollow.JPG" height ="256"/>
-</p>
-
-* Step 3 : Search for anaconda prompt in your Start Menu, and activate the environment you made during installation using the command :
+* Step 2 : Search for anaconda prompt in your Start Menu, and activate the environment you made during installation using the command :
 ```
    conda activate Wall_E_Team_999
 ```
 <p align="center">
-  <img src="./docs/anaconda_start.JPG" height ="256"/>
-  <img src="./docs/anaconda_activate.JPG" height ="256"/>
+  <img src="./docs/anaconda_activate.JPG"/>
 </p>
 
-* Navigate to the cloned directory in the Conda Terminal
-```
-   cd C:/Users/Username/Desktop/Wall-E-Sim
-```
-<p align="center">
-  <img src="./docs/navigate_clone.JPG" height ="256"/>
-</p>
+
 
 
 * Run the following commands in your Conda Terminal
@@ -133,15 +120,24 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 
 * For Windows :
-1. 
+1. Navigate to the cloned directory in the Conda Terminal
 ```
-   cd C:/Users/Username/Desktop/Wall-E-Sim
-   cmake -G "MinGW Makefiles" -B bin
+   cd C:\Users\Username\Desktop\Wall-E-CoppeliaSim\Wall-E-Sim\Task_3
+```
+<p align="center">
+  <img src="./docs/navigate_clone.JPG"/>
+</p>
+
+2. Run the following commands in the terminal
+```
+   
+   cd bin
+   cmake -G "MinGW Makefiles" ..
 ```
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_windows" height ="256"/>
+  <img src="./docs/cmake_windows.JPG" height ="256"/>
 </p>
 
 Do verify that your system is getting identified correctly
@@ -151,7 +147,6 @@ Do verify that your system is getting identified correctly
 
 2. If the output shows no errors, run the following commands in your Conda Terminal
 ```
-   cd bin
    mingw32-make
 ```
 
@@ -173,43 +168,34 @@ Terminal Output :
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/scene_exec.JPG" height ="256"/>
+  <img src="./docs/scene_exec.gif" height ="500"/>
 </p>
 
 * For Linux :
-1. Copy line_follow.cpp from Wall_E_Cop/wall-e-sim/task_3 and paste it here Wall_E_Cop/wall-e-sim
-<p align="center">
-  <img src="./docs/move_linux.JPG" height ="256"/>
-</p>
-3. 
+
+1. Navigate to the Directory where you cloned the repository and execute the following commands:
 ```
    cd <path_to_cloned_directory>
-   cd bin
+   cd Task_3/bin
    cmake ..
-   
 ```
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_linux.JPG" height ="256"/>
+  <img src="./docs/cmake_linux.png" height ="400"/>
 </p>
 
-Do verify that your system is getting identified correctly
-<p align="center">
-  <img src="./docs/system_cmake_linux.JPG" height ="256"/>
-</p>
-
-2. If the output shows no errors, run the following commands in your Conda Terminal
+2. If the output shows no errors, run the following command in your Terminal
 ```
    make
 ```
 
 Your output should look like this :
 <p align="center">
-  <img src="./docs/make_linux.JPG" height ="256"/>
+  <img src="./docs/make_linux.png" height ="256"/>
 </p>
 
-3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
+3 . Now Run the generated executable by typing the following command in your Terminal and pressing enter
  ```
    ./Wall_E_CoppeliaSim
 ```
@@ -217,11 +203,11 @@ Note : You can type ./W and press tab, the terminal will automatically detect th
 
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_linux.JPG" height ="256"/>
+  <img src="./docs/exec_terminal_linux.png" height ="256"/>
 </p>
 
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/exec_scene.JPG" height ="256"/>
+  <img src="./docs/exec_scene.gif" height ="450"/>
 </p>
