@@ -67,7 +67,7 @@ Then just open the WallE_line_follow.ttt file
   <img src="./docs/Task1_Win_cop.gif" height ="450"/>
 </p>
 
-* Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→Task_1* and just double click on *Wall_E_CoppeliaSim.exe*
+* Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→Task_1* and just double click on *Wall_E_CoppeliaSim_task1.exe*
 
 <p align="center">
   <img src="./docs/cd.gif" height ="450"/>
