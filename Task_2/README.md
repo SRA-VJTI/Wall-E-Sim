@@ -50,6 +50,7 @@ mingw32-make
 <p align="center">
   <img src="./docs/make_windows.JPG" height ="450"/>
 </p>
+
 * Open the scene in CoppeliaSim <br>
 Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
