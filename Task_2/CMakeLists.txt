@@ -3,11 +3,8 @@ project(Wall_E_CoppeliaSim_task2)
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
-"${CMAKE_CXX_FLAGS} -Wall -std=c++0x -DBUILD_SHARED_LIBS=OFF")
+"${CMAKE_CXX_FLAGS} -Wall -std=c++0x -static -static-libgcc -static-libstdc++ -DBUILD_SHARED_LIBS=OFF")
 ENDIF(CMAKE_COMPILER_IS_GNUCC)
-
-set(CMAKE_CXX_STANDARD_LIBRARIES "-static-libgcc -static-libstdc++ -lwsock32 -lws2_32 ${CMAKE_CXX_STANDARD_LIBRARIES}")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     set(remoteApiDef WIN32)
@@ -23,7 +20,6 @@ add_definitions(-DDO_NOT_USE_SHARED_MEMORY)
 add_definitions(-D${remoteApiDef})
 
 
-set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin/)
 
 set(SOURCES
     ../remote_api/extApi.c
@@ -42,7 +38,7 @@ set(HEADERS
 
 include_directories("../include/")
 include_directories("../remote_api/")
-include_directories("../src/")
+include_directories("Task_2/")
 
 find_package(Threads)
 
@@ -66,10 +62,15 @@ function(print)
     message("----------------------------------")
     message("Defining ${remoteApiDef}")
     message("To build this project")
-    message("cd to ${PROJECT_BINARY_DIR}")
-    message("type mingw32-make in the terminal")
+    message("Type the following commands in the terminal")
+    message("cd bin")
+    message("mingw32-make")
     message("Then Run the executable generated")
-    message("By running ${PROJECT_NAME}.exe on the terminal")
+    if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+        message("By running ${PROJECT_NAME}.exe on the terminal")
+    elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+         message("By running ./${PROJECT_NAME} on the terminal")
+    endif()
     message("----------------------------------")
 endfunction()
 

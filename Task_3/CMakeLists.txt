@@ -3,12 +3,8 @@ project(Wall_E_CoppeliaSim_task3)
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
-"${CMAKE_CXX_FLAGS} -Wall -std=c++0x -DBUILD_SHARED_LIBS=OFF")
+"${CMAKE_CXX_FLAGS} -Wall -std=c++0x -static -static-libgcc -static-libstdc++ -DBUILD_SHARED_LIBS=OFF")
 ENDIF(CMAKE_COMPILER_IS_GNUCC)
-
-
-set(CMAKE_CXX_STANDARD_LIBRARIES "-static-libgcc -static-libstdc++ -lwsock32 -lws2_32 ${CMAKE_CXX_STANDARD_LIBRARIES}")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     set(remoteApiDef WIN32)
@@ -17,11 +13,6 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     set(remoteApiDef __linux)
 endif()
-
-add_definitions(-DNON_MATLAB_PARSING)
-add_definitions(-DMAX_EXT_API_CONNECTIONS=255)
-add_definitions(-DDO_NOT_USE_SHARED_MEMORY)
-add_definitions(-D${remoteApiDef})
 
 
 
