@@ -33,8 +33,8 @@ Run the following commands on miniconda terminal
 <p align="center">
   <img src="./docs/navigate_clone_windows.JPG"/>
 </p>
-* Buid the files
 
+* Buid the files
 ```sh
 cd bin
 cmake -G "MinGW Makefiles" ..
@@ -43,7 +43,6 @@ cmake -G "MinGW Makefiles" ..
   <img src="./docs/cmake_windows.JPG" height ="450"/>
 </p>
 * Make the Files
-
 ```sh
 mingw32-make
 ```
