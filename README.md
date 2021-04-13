@@ -56,5 +56,5 @@ git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 </p>
 <br>
 
-After Cloning you can now you can now see all the files and folders present in your device and now you can proceed with tasks by just going to the respective task folder and there you will find more instructions.
+After Cloning you can now see all the files and folders present in your device and now you can proceed with tasks by just going to the respective task folder and there you will find more instructions.
 
