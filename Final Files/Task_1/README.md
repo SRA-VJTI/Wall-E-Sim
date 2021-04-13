@@ -105,7 +105,7 @@ and window will open up where you have to navigate like this
    sudo chmod +x ./Wall_E_CoppeliaSim_task1
 ```
 
-4. Now Run the generated executable by typing the following command in your Terminal and pressing enter
+4. Now Run the given executable by typing the following command in your Terminal and pressing enter
  ```
    ./Wall_E_CoppeliaSim_task1
 ```
