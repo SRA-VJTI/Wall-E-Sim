@@ -302,19 +302,25 @@ int main()
             returncode = simxSetFloatSignal(clientID, floatName, signalerror, simx_opmode_streaming);
 
             // For the first run of this loop, the error for Kd and Ki remains zero
-            // EDIT THIS VARIABLE
-            /* 
+
+
+            /*
             Previous error is saved  in the variable 'prev_error'
 
             --------------------------------------------------------------------------------------------
 
-            
+                                                     START CODING FROM HERE
 
             ----------------------------------------------------------------------------------------------
             */
+
             //Previous error is saved  in the variable 'prev_error'
             //Error is saved in the variable 'error'
-            //
+            //Cumulative error is your PID equation
+            //Kp = lineK[0]
+            //Kd = lineK[1]
+            //Ki = lineK[2]
+            
             if (isinitial == false) {
                 //derror = ;
                 //ierror = ;

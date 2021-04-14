@@ -458,7 +458,7 @@ int main()
              2. LEFT : The Left and Middle vision sensors detect a line
              3. RIGHT : The Right and Middle vision sensors detect a line
              4. REVERSE : None of the vision sensors detect a line
-             5. STOP : The bot reaches the end of path (ALL_BLACK condition is triggered multiple times)
+             5. 'break;' : The bot reaches the end of path (ALL_BLACK condition is triggered multiple times), do not pass this in CallTurn
 
             ---------------------------------------------------------------------------------------------
 
@@ -467,7 +467,7 @@ int main()
              2. WHITE_MARGIN : The maximum output of the vision sensor if it detects a white line
              3. all_black_flag : is 1 if all 3 sensors detect black line, 0 if not. This variable is already updated for you. 
               !!! DO NOT UPDATE OR CHANGE THE 'all_black_flag'  VARIABLE !!!
-             4. all_black_counter : Counts the number of ALL_BLACK conditions triggered. Value will be 99 for the STOP condition.
+             4. all_black_counter : Counts the number of ALL_BLACK conditions triggered. If Value is 99, 'break;' out of the loop to stop.
              5. sensorValue[0] : Output of Left Vision Sensor
              6. sensorValue[1] : Output of Middle Vision Sensor
              7. sensorValue[2] : Output of Right Vision sensor
@@ -483,7 +483,7 @@ int main()
 
             ----------------------------------------------------------------------------------------------
             */
-            
+             
 
             
            

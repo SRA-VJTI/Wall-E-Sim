@@ -3,7 +3,7 @@ project(Wall_E_CoppeliaSim)
 
 IF(CMAKE_COMPILER_IS_GNUCC)
 SET(CMAKE_CXX_FLAGS
-"${CMAKE_CXX_FLAGS} -Wall -std=c++0x -static -static-libgcc -static-libstdc++ -DBUILD_SHARED_LIBS=OFF")
+"${CMAKE_CXX_FLAGS} -Wall -std=c++0x  -DBUILD_SHARED_LIBS=OFF")
 ENDIF(CMAKE_COMPILER_IS_GNUCC)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
