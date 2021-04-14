@@ -1,6 +1,12 @@
 # Installation (if not done already)
 
 
+* Clone this git repository :
+```
+  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+```
+* Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
+
 **NOTE :** If you have already Cloned, run the following commands to get the updated version of the repository :<br>
 
 * Open the terminal(For Windows-cmd)
@@ -9,14 +15,6 @@
   git --version
   git pull
 ``` 
-
-**If you have not cloned, Clone this git repository :**
-```
-  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
-```
-
-
-* Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
 # Task 2
 Task 2 is basically to write the PID equation and update the error terms
