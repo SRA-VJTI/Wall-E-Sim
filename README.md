@@ -58,3 +58,20 @@ git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 
 After Cloning you can now see all the files and folders present in your device and now you can proceed with tasks by just going to the respective task folder and there you will find more instructions.
 
+
+**NOTE**: If you have already Cloned, run the following commands to get the updated version of the repository :
+For Windows --->
+
+Directly open the Wall-E-Coppeliasim folder then right click on Wall-E-Sim folder and search for "Git Bash" option a terminal will open up <br>
+Inside that terminal write the following command:
+```
+  git pull
+``` 
+
+For Ubuntu --->
+
+* Open the terminal
+* Go to the cloned path (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
+```
+  git pull
+```
