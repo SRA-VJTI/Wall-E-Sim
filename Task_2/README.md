@@ -91,7 +91,14 @@ and window will open up where you have to navigate like this
    cd Task_2/bin
    cmake ..
 ```
-
+If it shows no such file or directory 
+```
+   cd<path_to_cloned_directory>
+   cd Task_2
+   mkdir bin
+   cd bin
+   cmake ..
+```
 3. If the output shows no errors, run the following command in your Terminal
 ```
    make
