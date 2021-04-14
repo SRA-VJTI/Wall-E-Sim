@@ -91,7 +91,8 @@ and window will open up where you have to navigate like this
    cd Task_2/bin
    cmake ..
 ```
-If it shows no such file or directory 
+If it shows "bash: cd: Wall-E-Coppeliasim/Wall-E-Sim/Task_2/bin: No such file or directory"
+
 ```
    cd<path_to_cloned_directory>
    cd Task_2
