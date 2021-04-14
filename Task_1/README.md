@@ -7,6 +7,15 @@
 ```
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
+**NOTE :** If you have already Cloned, run the following commands to get the updated version of the repository :<br>
+
+* Open the terminal(For Windows-cmd)
+* Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
+```
+  git --version
+  git pull
+``` 
+
 # Task 1
 
 Task 1 is to tune the bot i.e. to check for the motion of the bot by changing the values of **K<sub>p</sub>** , **K<sub>i</sub>**, **K<sub>d</sub>**
