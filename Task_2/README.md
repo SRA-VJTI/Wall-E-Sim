@@ -1,8 +1,12 @@
 # Installation (if not done already)
 
-* If you have already Cloned, run the following commands (don't run on miniconda Terminal) :
+
+**NOTE :** If you have already Cloned, run the following commands to get the updated version of the repository :<br>
+
+* Open the terminal(For Windows-cmd)
+* Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
 ```
-  cd <path to Wall-E-Sim>
+  git --version
   git pull
 ``` 
 
