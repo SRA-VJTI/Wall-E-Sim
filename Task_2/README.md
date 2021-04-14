@@ -10,7 +10,7 @@
   git pull
 ``` 
 
-* If you have not cloned, Clone this git repository :
+**If you have not cloned, Clone this git repository :**
 ```
   git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
