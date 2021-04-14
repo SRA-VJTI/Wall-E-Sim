@@ -13,17 +13,20 @@ This is a simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.
 * Download CoppeliaSim Edu 4.0.0 for Windows 64-bit OS from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Setup.exe) (file size - 161MB).
 * Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already
 
+
+## Cloning For Windows ----->
+<br>
 **NOTE**: If you have already Cloned, run the following commands to get the updated version of the repository :<br>
 
-* Open the terminal(For Windows - cmd)
+* Open the terminal(cmd)
 * Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
 ```
   git --version
   git pull
 ``` 
 
+**If you have not cloned the repo :**<br>
 
-## Cloning For Windows ----->
 *You can do this in cmd*
 * Go to Desktop :
 ```
@@ -48,6 +51,16 @@ git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 
 
 ## Cloning For Linux ----->
+<br>
+**NOTE**: If you have already Cloned, run the following commands to get the updated version of the repository :<br>
+
+* Open the terminal
+* Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
+```
+  git --version
+  git pull
+``` 
+**If you have not cloned the repo :**<br>
 
 * Make a new folder and git init  :
 ```
