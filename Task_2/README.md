@@ -1,10 +1,16 @@
 # Installation (if not done already)
 
+* If you have already Cloned, run the following commands (don't run on miniconda Terminal) :
+```
+  git pull https://github.com/MOLOCH-dev/Wall-E-Sim.git
+``` 
 
-* Clone this git repository :
+* If you have not cloned, Clone this git repository :
 ```
   git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
+
+
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
 # Task 2
