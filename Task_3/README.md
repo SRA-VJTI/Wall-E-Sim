@@ -174,6 +174,15 @@ Your scene output should look like this
    cd Task_3/bin
    cmake ..
 ```
+If it shows "bash: cd: Wall-E-Coppeliasim/Wall-E-Sim/Task_3/bin: No such file or directory"
+
+```
+   cd<path_to_cloned_directory>
+   cd Task_3
+   mkdir bin
+   cd bin
+   cmake ..
+```
 
 Your output will look like this : 
 <p align="center">
