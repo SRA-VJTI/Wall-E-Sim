@@ -49,7 +49,7 @@ cd bin
 cmake -G "MinGW Makefiles" ..
 ```
 <p align="center">
-  <img src="./docs/cmake_windows.JPG" height ="450"/>
+  <img src="./docs/cmake_windows.JPG"/>
 </p>
 
 * Make the Files
@@ -57,14 +57,14 @@ cmake -G "MinGW Makefiles" ..
 mingw32-make
 ```
 <p align="center">
-  <img src="./docs/make_windows.JPG" height ="450"/>
+  <img src="./docs/make_windows.JPG" />
 </p>
 
 * Open the scene in CoppeliaSim <br>
 Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
-  <img src="./docs/Task2_Win_cop.gif" height ="450"/>
+  <img src="./docs/Task2_Win_cop.gif"/>
 </p>
 
 * In the same terminal, run
@@ -90,7 +90,7 @@ and window will open up where you have to navigate like this
 *home/username/Wall-E-Coppeliasim/Wall-E-Sim/scenes* <br>
 * Now Open WallE_line_follow.tt
 <p align="center">
-  <img src="./docs/Task2_Ubuntu_cop.gif" height ="450"/>
+  <img src="./docs/Task2_Ubuntu_cop.gif" />
 </p>
 
 
@@ -123,5 +123,5 @@ If it shows "bash: cd: Wall-E-Coppeliasim/Wall-E-Sim/Task_2/bin: No such file or
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/Task2_Ubuntu.gif" height ="500"/>
+  <img src="./docs/Task2_Ubuntu.gif"/>
 </p>
