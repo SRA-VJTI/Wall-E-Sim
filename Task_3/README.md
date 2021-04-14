@@ -1,6 +1,7 @@
 # Wall-E-Sim : Task 3
 The scene contains a Black Line on a White Surface
 Ensure that your Wall-E bot goes from the start to the end of the given maze.
+Start coding from line 486
 
 <p align="center">
   <img src="./docs/scene_task3.JPG" width="800"/>
@@ -91,12 +92,6 @@ Your Task is to make your bot follow your decided path from the START to the END
 7. **WHITE_MARGIN** : (integer) MAXIMUM Output of a sensor when it does not detect a line
    
 
-# Code Algorithm
-
-<p align="center">
-  <img src="./docs/code_algo.JPG" height ="500"/>
-</p>
-
 
 # Run the code
 * Step 1 : Open _scenes/WallE_line_follow_maze.ttt_ in V-REP. You should see the Wall-E line-follower path, three vision sensor floating views, and a white floor with a maze line. 
@@ -177,6 +172,15 @@ Your scene output should look like this
 ```
    cd <path_to_cloned_directory>
    cd Task_3/bin
+   cmake ..
+```
+If it shows "bash: cd: Wall-E-Coppeliasim/Wall-E-Sim/Task_3/bin: No such file or directory"
+
+```
+   cd<path_to_cloned_directory>
+   cd Task_3
+   mkdir bin
+   cd bin
    cmake ..
 ```
 
