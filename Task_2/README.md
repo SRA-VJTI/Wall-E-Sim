@@ -3,7 +3,7 @@
 * If you have already Cloned, run the following commands (don't run on miniconda Terminal) :
 ```
   cd <path to Wall-E-Sim>
-  git pull https://github.com/MOLOCH-dev/Wall-E-Sim.git
+  git pull
 ``` 
 
 * If you have not cloned, Clone this git repository :
