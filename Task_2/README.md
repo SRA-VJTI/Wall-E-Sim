@@ -21,7 +21,7 @@ Task 2 is basically to write the PID equation and update the error terms
   <img src="./docs/code.png" height ="450"/>
 </p>
 
-1) First just uncomment "derror = ", "ierror = " and "cumulative_error = "
+1) First just uncomment "derror = ", "ierror = " and "cumulative_error = " (Modify ONLY lines 325,326,329)
 2) Update the values for derror and ierror
 3) Write the equation in cumulative_error
 4) Then follow the **Run the code** steps
