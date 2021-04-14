@@ -60,18 +60,11 @@ After Cloning you can now see all the files and folders present in your device a
 
 
 **NOTE**: If you have already Cloned, run the following commands to get the updated version of the repository :<br>
-For Windows --->
 
-Directly open the Wall-E-Coppeliasim folder then right click on Wall-E-Sim folder and search for "Git Bash" option a terminal will open up <br>
-Inside that terminal write the following command:
+* Open the terminal(cmd(for Windows))
+* Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
 ```
+  git --version
   git pull
 ``` 
 
-For Ubuntu --->
-
-* Open the terminal
-* Go to the cloned path (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
-```
-  git pull
-```
