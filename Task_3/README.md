@@ -1,3 +1,23 @@
+# Installation (if not done already)
+
+
+**NOTE :** If you have already Cloned, run the following commands to get the updated version of the repository :<br>
+
+* Open the terminal(For Windows-cmd)
+* Go to the cloned directory (Wall-E-Coppeliasim/Wall-E-Sim) and run the following command
+```
+  git --version
+  git pull
+``` 
+
+* If you have not cloned, Clone this git repository :
+```
+  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+```
+
+
+* Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
+
 # Wall-E-Sim : Task 3
 The scene contains a Black Line on a White Surface
 Ensure that your Wall-E bot goes from the start to the end of the given maze.
