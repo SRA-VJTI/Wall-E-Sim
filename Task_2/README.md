@@ -20,7 +20,7 @@
 Task 2 is basically to write the PID equation and update the error terms
 
 <p align="center">
-  <img src="./docs/code.png" height ="450"/>
+  <img src="./docs/code.png"/>
 </p>
 
 1) First just uncomment "derror = ", "ierror = " and "cumulative_error = " (Modify ONLY lines 325,326,329)
@@ -45,6 +45,12 @@ Run the following commands on miniconda terminal
 
 * Buid the files
 ```sh
+cd bin
+cmake -G "MinGW Makefiles" ..
+```
+If the `cd bin` command shows an error just execute these commands
+```sh
+mkdir bin
 cd bin
 cmake -G "MinGW Makefiles" ..
 ```
