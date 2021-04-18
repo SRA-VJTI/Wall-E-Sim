@@ -476,7 +476,7 @@ int main()
 
             SYNTAX FOR CALLING callTurn() FUNCTION:
              if (condition for turn){
-                all_black_counter = callTurn(clientID,leftmotorHandle,sensorHandle,n,rightmotorHandle,all_black_flag,all_black_counter, sensorValue, condition);
+                all_black_counter = callTurn(clientID,sensorHandle,n,leftmotorHandle,rightmotorHandle,all_black_flag,all_black_counter, sensorValue, condition);
              }
             In place of condition, you can pass in LEFT, RIGHT, ALL_BLACK, REVERSE
             !!! DO NOT PASS THE 'STOP' CONDITION into the function 'callTurn()' !!!
