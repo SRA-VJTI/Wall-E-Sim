@@ -162,7 +162,7 @@ Your output should look like this :
 Note : You can type W and press tab, the terminal will automatically detect the exe file
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_windows.JPG" height ="256"/>
+  <img src="./docs/executable_command_win.png" height ="256"/>
 </p>
 
 Your scene output should look like this
@@ -203,7 +203,7 @@ Note : You can type ./W and press tab, the terminal will automatically detect th
 
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_linux.png" height ="256"/>
+  <img src="./docs/executable_command_linux.png" height ="256"/>
 </p>
 
 Your scene output should look like this
