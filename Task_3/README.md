@@ -157,7 +157,7 @@ Your output should look like this :
 
 3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
  ```
-   Wall_E_CoppeliaSim.exe
+   Wall_E_CoppeliaSim_task3.exe
 ```
 Note : You can type W and press tab, the terminal will automatically detect the exe file
 Terminal Output : 
@@ -197,7 +197,7 @@ Your output should look like this :
 
 3 . Now Run the generated executable by typing the following command in your Terminal and pressing enter
  ```
-   ./Wall_E_CoppeliaSim
+   ./Wall_E_CoppeliaSim_task3
 ```
 Note : You can type ./W and press tab, the terminal will automatically detect the exe file
 
