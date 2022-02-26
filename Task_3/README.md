@@ -157,12 +157,12 @@ Your output should look like this :
 
 3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
  ```
-   Wall_E_CoppeliaSim.exe
+   Wall_E_CoppeliaSim_task3.exe
 ```
 Note : You can type W and press tab, the terminal will automatically detect the exe file
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_windows.JPG" height ="256"/>
+  <img src="./docs/executable_command_win.png" height ="256"/>
 </p>
 
 Your scene output should look like this
@@ -197,13 +197,13 @@ Your output should look like this :
 
 3 . Now Run the generated executable by typing the following command in your Terminal and pressing enter
  ```
-   ./Wall_E_CoppeliaSim
+   ./Wall_E_CoppeliaSim_task3
 ```
 Note : You can type ./W and press tab, the terminal will automatically detect the exe file
 
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_linux.png" height ="256"/>
+  <img src="./docs/executable_command_linux.png" height ="256"/>
 </p>
 
 Your scene output should look like this
