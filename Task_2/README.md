@@ -75,7 +75,7 @@ Then just open the WallE_line_follow.ttt file
 
 * In the same terminal, run
 ```
-  Wall_E_CoppeliaSim.exe
+  Wall_E_CoppeliaSim_task2.exe
 ```
 <p align="center">
   <img src="./docs/exec_terminal_windows.PNG"/>
@@ -122,7 +122,7 @@ If it shows "bash: cd: Wall-E-Coppeliasim/Wall-E-Sim/Task_2/bin: No such file or
 
 4. Now Run the generated executable by typing the following command in your Terminal and pressing enter
  ```
-   ./Wall_E_CoppeliaSim
+   ./Wall_E_CoppeliaSim_task2
 ```
 **NOTE :** You can type ./W and press tab, the terminal will automatically detect the exe file
 
