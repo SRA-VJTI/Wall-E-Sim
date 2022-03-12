@@ -233,12 +233,17 @@ Note : Your version of cmake may be different than what is shown above. Cmake ve
 
 ### Coppeliasim
 
-1. Download CoppeliaSim Edu 4.0.0 for MacOS 64-bit OS from here(file size - 250MB). Save the file in the Downloads folder.
+1. Download CoppeliaSim Edu 4.2.0 for MacOS 10.15 from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_2_0_macOS10_15.zip). 
+
+   Download CoppeliaSim Edu 4.2.0 for MacOS 10.13 from [here](https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_2_0_macOS10_13.zip).
+   
+   Save the file in the Downloads folder.
+   
 2. Extract the File in Downloads folder
-3. Open Terminal(command+space, type terminal) and Run the following command:
+3. Open Terminal (command+space, type terminal) and Run the following command:
 
     ```
-    cd ~/Downloads/CoppeliaSim_Edu_V4_0_0_Mac
+    cd ~/Downloads/CoppeliaSim_Edu_V4_2_0_Mac
 
     sudo xattr -r -d com.apple.quarantine *
     ```
