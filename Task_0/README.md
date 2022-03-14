@@ -30,9 +30,16 @@
 
 ### Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already (optional)
 
+### Verifying if MinGW is installed
+
+To check whether MinGW is installed or not, type ```gcc --version``` . If MinGW is installed, the output should be somewhat like this.
+ <p align="center">
+        <img src="./assets/Verify_MinGW.png">
+    </p>
 
 ### MinGW (ONLY IF YOU DO NOT HAVE MINGW INSTALLED)
 
+ 
 1. [Installation link](https://sourceforge.net/projects/mingw/files/Installer/)
 
 2. [Installation guide](https://code.visualstudio.com/docs/cpp/config-mingw) and [Video Reference](https://youtu.be/BK_ciBOXWr0)
