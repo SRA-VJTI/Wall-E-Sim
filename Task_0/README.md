@@ -30,14 +30,21 @@
 
 ### Download [Visual Studio Code](https://code.visualstudio.com/download), if you haven't already (optional)
 
-### Verifying if MinGW is installed
+### Next step is to verify if MinGW is installed
 
-To check whether MinGW is installed or not, type ```gcc --version``` . If MinGW is installed, the output should be somewhat like this.
- <p align="center">
-        <img src="./assets/Verify_MinGW.png">
-    </p>
+To check whether MinGW is installed type the following commands in command prompt terminal.
 
-### MinGW (ONLY IF YOU DO NOT HAVE MINGW INSTALLED)
+```
+    gcc --version
+    g++ --version
+    mingw32-make --version
+```
+
+<p align="center">
+    <img src="./assets/Verify_MinGW-make.png">
+</p>
+
+### MinGW (ONLY IF YOU DO NOT HAVE MinGW INSTALLED)
 
  
 1. [Installation link](https://sourceforge.net/projects/mingw/files/Installer/)
@@ -64,134 +71,65 @@ To check whether MinGW is installed or not, type ```gcc --version``` . If MinGW 
 
 11. Click on `New` and copy the file path to MinGW/bin ( C:\MinGW\bin ) and then click on `ok`
 
-12. Verify installation by opening command prompt or PowerShell and typing
+12. Verify [installation of MinGW](#next-step-is-to-verify-if-mingw-is-installed)
 
-```
-    gcc --version
-```
+### Installing CMake
 
+1. Download CMake for 64 bit Windows from [here](https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-windows-x86_64.msi).
 
-### Miniconda Installation (For Python 3.8)
+    Download CMake for 32 bit Windows from [here](https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3-windows-i386.msi).
 
-1. Download miniconda for Windows 64-bit from [here](https://repo.anaconda.com/miniconda/Miniconda3-py38_4.8.3-Windows-x86_64.exe) (If you have a 64-bit OS)
-
-   Download miniconda for Windows 32-bit from [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe) (If you have a 32-bit OS)
-
-2. Navigate to the downloaded .exe file of miniconda and double-click it. You would be greeted with a screen as shown below.
+2. Navigate to your downloads folder and click on the CMake Installer. CMake Setup Wizard will open and click on Next.
 
     <p align="center">
-        <img src="./assets/1_Miniconda_Windows_Installer_Start.png">
+        <img src="./assets/cmake-setup-start.png">
     </p>
 
-3. Click on I Agree to accept the terms of agreement
-
-4. Leave the default Just Me selected and click Next.
-
-5. Leave the destination folder to install Miniconda untouched. Note: If the directory path contains any spaces, it will throw a Warning ! saying that the directory name should not contain spaces but that's okay, click OK.
-
-6. Select Register Miniconda3 as my default Python 3.8.
+3. Select the accept terms checkbox and click on next.
 
     <p align="center">
-        <img src="./assets/2_Miniconda_Advanced_Installation_Options.png">
+        <img src="./assets/cmake-agree-install.png">
     </p>
 
-7. Click on Install.
-
-8. Click Next when the installation completes. Skip the optional installation of Microsoft Visual Studio Code by clicking Skip, as we will install it manually later.
-
-9. Un-check the two boxes as shown in Figure and click Finish.
+4. Important Step : Click on Add CMake to system PATH for current user.
 
     <p align="center">
-        <img src="./assets/3_Miniconda_Installation_Complete.png">
+        <img src="./assets/cmake-path.png">
     </p>
 
-### Miniconda Install Verification
+5. Click on Next.
 
-1. Search for Anaconda Prompt (miniconda3) in the Start menu. Open it
+    <p align="center">
+        <img src="./assets/cmake-folder.png">
+    </p>
 
-2. Type the following command in the prompt which has popped up.
+6. Click on Install and Yes in further dialog box to finish install.
 
-   ```
-       conda info
-   ```
+### Add CMake to Path Environment variable
 
-   You will get the following output :
+7. To verify if CMake is installed properly run the following command in command prompt.
 
-   <p align="center">
-       <img src="./assets/4_Output_of_conda_info_command.png" width="700"/>
-   </p>
+    ```
+        cmake --version
+    ```
 
-3. Type out the following command
+    If the output is similar to below figure you have completed your installation and skip rest of the steps. If not proceed further.
 
-   ```
-       conda info -e
-   ```
+    <p align="center">
+        <img src="./assets/cmake-version.png">
+    </p>
 
-   Output :
+7. Go to the Search bar and type `Environment` Click on `Edit the System Environment Variables`
 
-   <p align="center">
-       <img src="./assets/5_Output_of_conda_env_list_command.png" width="700"/>
-   </p>
+8. Click on `Environment Variables`
 
-4. To activate the default Python environment that comes with Miniconda installation, type in following in sequence
+9. Click on `Path` under `System Variables` section and select `Edit` .
 
-   ```
-       conda activate base
-       where python
-       python
-   ```
+10. Click on `New` and copy the file path to CMake/bin (`C:\Program Files\CMake\bin`) and then click on `ok`.
 
-   You will see output similar to Figure 6. What we did here is, first we invoked the default environment, then checked whether the prompt is able to detect the path of Python that came installed with Miniconda and at last we called the Python interpreter or console, you can see the very first message has Anaconda word which justifies it.
-
-   <p align="center">
-       <img src="./assets/6_Output_of_where_python_and_python.png" width="700"/>
-   </p>
-
-5. The Python version (3.8.3) might be different at your end but that's okay as long as it is 3.8.x. Type exit() to come out of the Python console.
-
-6. Create a new environment in conda (replace 999 with your team id)
-
-   ```
-       conda create --name Wall_E_Team_999
-   ```
-
-   <p align="center">
-       <img src="./assets/7_create_venv.png" width="700"/>
-   </p>
-
-7. Verify if the environment was created using the command
-
-   ```
-       conda info -e
-   ```
-
-   <p align="center">
-       <img src="./assets/8_verify_venv.png" width="700"/>
-   </p>
-
-8. Activate the enviroment created and verify gcc installation on conda
-
-   ```
-       conda activate Wall_E_Team_999
-       gcc --version
-       g++ --version
-       gdb --version
-   ```
-
-   <p align="center">
-       <img src="./assets/8_verify_gcc.png" width="700"/>
-   </p>
-
-9. Install cmake on conda
-
-   ```
-       conda install -c conda-forge cmake
-       cmake --version
-       mingw32-make --version
-   ```
-   <p align="center">
-       <img src="./assets/9_cmake.png" width="700"/>
-   </p>
+    <p align="center">
+        <img src="./assets/cmake-env.png">
+    </p>
 
 ## For Linux
 
