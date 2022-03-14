@@ -164,7 +164,9 @@ To check whether MinGW is installed type the following commands in command promp
 1. On the terminal, type
 
    ```
-   sudo apt install build-essential cmake --version make --version
+   sudo apt install build-essential 
+   cmake --version 
+   make --version
    ```
 
     Output:
