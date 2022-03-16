@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Wall_E_CoppeliaSim_task3)
+project(Wall_E_CoppeliaSim)
 
 
 IF(CMAKE_COMPILER_IS_GNUCC)
