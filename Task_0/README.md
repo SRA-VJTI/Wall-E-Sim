@@ -190,9 +190,9 @@ Note : Your version of cmake may be different than what is shown above. Cmake ve
 3. Open Terminal (command+space, type terminal) and Run the following command:
 
     ```
-    cd ~/Downloads/CoppeliaSim_Edu_V4_2_0_Mac
-
-    sudo xattr -r -d com.apple.quarantine *
+    cd ~/Downloads
+    
+    sudo xattr -r -d com.apple.quarantine coppeliaSim.app
     ```
 
 4. Open finder, go to downloads, then click on `coppeliaSim`.
