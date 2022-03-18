@@ -3,7 +3,7 @@
 
 * Clone this git repository :
 ```
-  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+  git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
@@ -24,7 +24,9 @@ Task 1 is to tune the bot i.e. to check for the motion of the bot by changing th
 
 PID is the mechanism through which we can control the motion of line following bot which is dependent on few terms given below in the equation
 
-![equation](https://i0.wp.com/media.visaya.solutions/2017/10/300px-PIDController_Equation.png?resize=344%2C141)
+<p align="center">
+  <img src="./docs/PID_Equation.png"/>
+</p>
 
 where 
   1)  **K<sub>p</sub>e(t)** is the P term which basically says that (in terms of the line) your error increases as you go away from the line.

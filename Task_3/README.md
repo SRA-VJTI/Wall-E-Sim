@@ -3,7 +3,7 @@
 
 * Clone this git repository :
 ```
-  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+  git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
@@ -25,6 +25,11 @@ Start coding from line 486
   <img src="./docs/scene_task3.JPG" width="800"/>
 </p>
 
+# Flowchart for sensors
+
+<p align="center">
+  <img src="./docs/Maze_Sensors_Flowchart.png"/>
+</p>
 
 # Instructions
 
@@ -117,71 +122,62 @@ Your Task is to make your bot follow your decided path from the START to the END
   <img src="./docs/scene_task3.JPG" height ="520"/>
 </p>
 
-* Step 2 : Search for anaconda prompt in your Start Menu, and activate the environment you made during installation using the command :
-```
-   conda activate Wall_E_Team_999
-```
-<p align="center">
-  <img src="./docs/anaconda_activate.JPG"/>
-</p>
+* Step 2 : Search for cmd in your Start Menu:
 
 
-
-
-* Run the following commands in your Conda Terminal
+* Run the following commands in your cmd
 
 
 
 * For Windows :
-1. Navigate to the cloned directory in the Conda Terminal
+1. Navigate to the cloned directory in cmd
 ```
-   cd C:\Users\Username\Desktop\Wall-E-CoppeliaSim\Wall-E-Sim\Task_3
+   cd C:\Users\Username\Wall-E-CoppeliaSim\Wall-E-Sim\Task_3
 ```
 <p align="center">
-  <img src="./docs/navigate_clone.JPG"/>
+  <img src="./docs/Navigate_Task3.png"/>
 </p>
 
-2. Run the following commands in the terminal
+2. Run the following commands in cmd
 ```
-   
    cd bin
    cmake -G "MinGW Makefiles" ..
 ```
 
 Your output will look like this : 
 <p align="center">
-  <img src="./docs/cmake_windows.JPG" height ="256"/>
+  <img src="./docs/windows_cmake.png" />
 </p>
 
 Do verify that your system is getting identified correctly
 <p align="center">
-  <img src="./docs/system_cmake_windows.JPG" height ="256"/>
+  <img src="./docs/windows_cmake_verify_system.jpeg"/>
 </p>
 
-2. If the output shows no errors, run the following commands in your Conda Terminal
+1. If the output shows no errors, run the following commands in cmd
 ```
    mingw32-make
 ```
 
 Your output should look like this :
 <p align="center">
-  <img src="./docs/make_windows.JPG" height ="256"/>
+  <img src="./docs/windows_make.png"/>
 </p>
 
-3 . Now Run the generated executable by typing the following command in your Conda Terminal and pressing enter
- ```
-   Wall_E_CoppeliaSim.exe
+3 . Now Run the generated executable by typing the following command in cmd and pressing enter
+```
+      Wall_E_CoppeliaSim.exe
 ```
 Note : You can type W and press tab, the terminal will automatically detect the exe file
 Terminal Output : 
 <p align="center">
-  <img src="./docs/exec_terminal_windows.JPG" height ="256"/>
+  <img src="./docs/windows_exec_task3.png" height ="256"/>
 </p>
 
 Your scene output should look like this
 
 <p align="center">
-  <img src="./docs/scene_exec.gif" height ="500"/>
+  <img src="./docs/scene_exec_windows.gif" />
 </p>
 
 * For Linux :

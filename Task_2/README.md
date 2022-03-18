@@ -3,7 +3,7 @@
 
 * Clone this git repository :
 ```
-  git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+  git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 * Download MinGW on Windows following [these instructions](https://code.visualstudio.com/docs/cpp/config-mingw) 
 
@@ -33,14 +33,14 @@ Task 2 is basically to write the PID equation and update the error terms
 
 ## For Windows ------>
 
-Run the following commands on miniconda terminal
-(path = path to cloned repo, for eg. C:\Users\name\Desktop\Wall_E_CoppeliaSim)
-* Open miniconda terminal
+Run the following commands on cmd.
+(path = path to cloned repo, for eg. C:\Users\name\Wall_E_CoppeliaSim)
+* Open cmd
 ```
   cd path\Task_2
 ```
 <p align="center">
-  <img src="./docs/navigate_clone_windows.JPG"/>
+  <img src="./docs/Navigate_Task2.png"/>
 </p>
 
 * Buid the files
@@ -55,7 +55,7 @@ cd bin
 cmake -G "MinGW Makefiles" ..
 ```
 <p align="center">
-  <img src="./docs/cmake_windows.JPG"/>
+  <img src="./docs/windows_cmake.png"/>
 </p>
 
 * Make the Files
@@ -63,11 +63,11 @@ cmake -G "MinGW Makefiles" ..
 mingw32-make
 ```
 <p align="center">
-  <img src="./docs/make_windows.JPG" />
+  <img src="./docs/windows_make.png" />
 </p>
 
 * Open the scene in CoppeliaSim <br>
-Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
+Go to *Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
   <img src="./docs/Task2_Win_cop.gif"/>
@@ -78,7 +78,7 @@ Then just open the WallE_line_follow.ttt file
   Wall_E_CoppeliaSim.exe
 ```
 <p align="center">
-  <img src="./docs/exec_terminal_windows.PNG"/>
+  <img src="./docs/windows_exec_terminal.png"/>
 </p>
 
 <br>
