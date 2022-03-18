@@ -67,7 +67,7 @@ mingw32-make
 </p>
 
 * Open the scene in CoppeliaSim <br>
-Go to *Desktop→Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
+Go to *Wall-E-Coppeliasim→Wall-E-Sim→scenes* <br>
 Then just open the WallE_line_follow.ttt file 
 <p align="center">
   <img src="./docs/Task2_Win_cop.gif"/>
