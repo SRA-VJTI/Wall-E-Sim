@@ -28,9 +28,9 @@ This is a simuation of [SRA's Wall-E bot](https://github.com/SRA-VJTI/Wall-E_v2.
 **If you have not cloned the repo :**<br>
 
 *You can do this in cmd*
-* Go to Desktop :
+* Go to User Profile :
 ```
-cd Desktop
+cd C:\Users\name
 ```
 
 * Make a new folder and git init  :
