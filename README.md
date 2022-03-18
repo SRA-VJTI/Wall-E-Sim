@@ -46,7 +46,7 @@ git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
 ```
 **Refer this video (if required)**<br>
 <p align="center">
-  <img src="./docs/Windows_Part.gif" width="600"/>
+  <img src="./docs/Windows_clone_demo.gif"/>
 </p>
 
 
