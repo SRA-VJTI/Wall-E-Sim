@@ -42,7 +42,7 @@ git init
 
 * Clone this git repository while in the same folder :
 ```
-git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 **Refer this video (if required)**<br>
 <p align="center">
@@ -71,7 +71,7 @@ git init
 
 * Clone this git repository while in the same folder :
 ```
-git clone https://github.com/MOLOCH-dev/Wall-E-Sim.git
+git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 **Refer this video (if required)**<br>
 <p align="center">
