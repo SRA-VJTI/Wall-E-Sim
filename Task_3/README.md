@@ -86,7 +86,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 *  Note  : The turns for REVERSE and END conditions have already been configured for you, you need to decide what turns your bot has to take for the LEFT, RIGHT and NODE conditions
 
-* Step 5 : Once you have the turns decided, start coding in the alloted space (line 123 onwards in 'line_follow.cpp'
+* Step 5 : Once you have the turns decided, start coding in the alloted space (line 123 onwards) in 'task_3.cpp'
 
 
 # Code Details
