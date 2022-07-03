@@ -46,7 +46,7 @@ git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 ```
 **Refer this video (if required)**<br>
 <p align="center">
-  <img src="./docs/Windows_clone_demo.gif"/>
+  <img src="./docs/Windows_Cloning_Demo.gif"/>
 </p>
 
 
@@ -80,6 +80,5 @@ git clone https://github.com/SRA-VJTI/Wall-E-Sim.git
 <br>
 
 After Cloning you can now see all the files and folders present in your device and now you can proceed with tasks by just going to the respective task folder and there you will find more instructions.
-
 
 
