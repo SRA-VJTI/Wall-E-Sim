@@ -107,7 +107,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 *   Helper Variables :
 1. **sensorValue[0]** : Output from the Right sensor
 2. **sensorValue[1]** : Output from the Middle sensor
-3. **sensorValue[2]** : Output from the Left sensor
+3. **sensorValue[2]** : Output from the Left sensor </br>
 Note: The sensor positions given above are with respect to the bot itself. </br>
 4. **all_black_flag** : Has a value of 1 when all three sensors detect a black line
 5. **all_black_counter** : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
