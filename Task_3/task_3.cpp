@@ -468,10 +468,10 @@ int main()
              3. all_black_flag : is 1 if all 3 sensors detect black line, 0 if not. This variable is already updated for you. 
               !!! DO NOT UPDATE OR CHANGE THE 'all_black_flag'  VARIABLE !!!
              4. all_black_counter : Counts the number of ALL_BLACK conditions triggered. If Value is 99, 'break;' out of the loop to stop.
-             5. sensorValue[0] : Output of Left Vision Sensor
+             5. sensorValue[0] : Output of Right Vision Sensor
              6. sensorValue[1] : Output of Middle Vision Sensor
-             7. sensorValue[2] : Output of Right Vision sensor
-
+             7. sensorValue[2] : Output of Left Vision sensor
+             Note: The sensor positions given above are with respect to the bot itself.
             ----------------------------------------------------------------------------------------------
 
             SYNTAX FOR CALLING callTurn() FUNCTION:
