@@ -86,7 +86,7 @@ Your Task is to make your bot follow your decided path from the START to the END
 
 *  Note  : The turns for REVERSE and END conditions have already been configured for you, you need to decide what turns your bot has to take for the LEFT, RIGHT and NODE conditions
 
-* Step 5 : Once you have the turns decided, start coding in the alloted space (line 123 onwards in 'line_follow.cpp'
+* Step 5 : Once you have the turns decided, start coding in the alloted space (line 123 onwards in 'task_3.cpp'
 
 
 # Code Details
@@ -105,9 +105,10 @@ Your Task is to make your bot follow your decided path from the START to the END
 4. **STOP** : Variable for stopping
 5. **All_BLACK** : Variable for NODE condition (turns Right by Default)
 *   Helper Variables :
-1. **sensorValue[0]** : Output from the Left sensor
+1. **sensorValue[0]** : Output from the Right sensor
 2. **sensorValue[1]** : Output from the Middle sensor
-3. **sensorValue[2]** : Output from the Right sensor
+3. **sensorValue[2]** : Output from the Left sensor </br>
+Note: The sensor positions given above are with respect to the bot itself. </br>
 4. **all_black_flag** : Has a value of 1 when all three sensors detect a black line
 5. **all_black_counter** : Counts the number of times 'all_black_flag' variable has a value of 1 consecutively(one after the other). 
 *     (**Note** : If all_black_counter has a value equal to STOP variable, you have to 'break' out of the main While loop)
